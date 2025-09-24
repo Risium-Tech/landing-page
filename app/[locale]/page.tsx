@@ -10,8 +10,8 @@ import Feedback from "@/components/sections/Feedback/Feedback";
 import DownloadBanner from "@/components/sections/DownloadBanner/DownloadBanner";
 import Footer from "@/components/layout/Footer";
 
-export const generateMetadata = async ({ params }: { params: { locale: string } }) => {
-  const { locale } = params;
+export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }) => {
+  const { locale } = await params;
 
   return generateSeoMetadata({
     locale,

@@ -3,13 +3,22 @@
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Footer() {
   const t = useTranslations("Footer");
 
+  const handleScroll = (id: string) => {
+    const lenis = (window as any).lenis;
+    if (lenis) {
+      lenis.scrollTo(id); // scroll suave
+    } else {
+      const el = document.querySelector(id);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <footer className="bg-blue-dark text-white">
+    <footer className="bg-blue-dark text-white" id="contact">
       {/* Newsletter */}
       <div className="border-yellow-normal bg-blue-dark space-y-9 border-t-4 py-16 text-center">
         <h2 className="text-2xl font-bold">{t("newsletter.title")}</h2>
@@ -36,12 +45,12 @@ export default function Footer() {
           <div className="space-y-2">
             <p className="flex items-center gap-2">
               <PhoneIcon className="h-5 w-5" />
-              +11 99999-9999
+              +351 920 406 913
             </p>
             <p className="flex items-center gap-2">
               <EnvelopeIcon className="h-5 w-5" />
-              <a href="mailto:contato@upconnections.com" className="hover:underline">
-                contato@upconnections.com
+              <a href="mailto:comercial@upconnections-app.com" className="hover:underline">
+                comercial@upconnections-app.com
               </a>
             </p>
           </div>
@@ -52,22 +61,22 @@ export default function Footer() {
           <h3 className="font-bold uppercase">{t("links.title")}</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="/">{t("links.home")}</Link>
+              <button onClick={() => handleScroll("#home")}>{t("links.home")}</button>
             </li>
             <li>
-              <Link href="/about">{t("links.about")}</Link>
+              <button onClick={() => handleScroll("#about")}>{t("links.about")}</button>
             </li>
             <li>
-              <Link href="/how">{t("links.how")}</Link>
+              <button onClick={() => handleScroll("#how")}>{t("links.how")}</button>
             </li>
             <li>
-              <Link href="/benefits">{t("links.benefits")}</Link>
+              <button onClick={() => handleScroll("#benefits")}>{t("links.benefits")}</button>
             </li>
             <li>
-              <Link href="/feedbacks">{t("links.feedbacks")}</Link>
+              <button onClick={() => handleScroll("#feedbacks")}>{t("links.feedbacks")}</button>
             </li>
             <li>
-              <Link href="/contact">{t("links.contact")}</Link>
+              <button onClick={() => handleScroll("#contact")}>{t("links.contact")}</button>
             </li>
           </ul>
         </div>
