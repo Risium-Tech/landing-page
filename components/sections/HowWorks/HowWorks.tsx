@@ -6,6 +6,7 @@ import StepCard from "@/components/ui/StepCard";
 import "keen-slider/keen-slider.css";
 import { useKeenSlider } from "keen-slider/react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function HowWorks() {
   const t = useTranslations("HomePage.how");
@@ -44,17 +45,29 @@ export default function HowWorks() {
 
       {/* Content */}
       <div className="mx-auto flex w-full flex-col items-center justify-center gap-20">
-        <div className="space-y-4 text-center">
+        <motion.div
+          className="space-y-4 text-center"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
           <h2 className="text-3xl font-extrabold text-white md:text-3xl lg:text-6xl">
             <span className="border-yellow-normal inline-block border-b-4 pb-1">{t("title")}</span>
           </h2>
           <p className="text-3xl">{t("subtitle")}</p>
-        </div>
+        </motion.div>
 
         {/* Steps → vira slider no mobile */}
         <div className="w-full max-w-6xl px-4">
           <div ref={sliderRef} className="keen-slider">
-            <div className="keen-slider__slide">
+            <motion.div
+              className="keen-slider__slide"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
               <StepCard
                 icon={
                   <Image
@@ -67,9 +80,15 @@ export default function HowWorks() {
                 title={t("steps.step1.title")}
                 description={t("steps.step1.description")}
               />
-            </div>
+            </motion.div>
 
-            <div className="keen-slider__slide">
+            <motion.div
+              className="keen-slider__slide"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
               <StepCard
                 icon={
                   <Image
@@ -82,9 +101,15 @@ export default function HowWorks() {
                 title={t("steps.step2.title")}
                 description={t("steps.step2.description")}
               />
-            </div>
+            </motion.div>
 
-            <div className="keen-slider__slide">
+            <motion.div
+              className="keen-slider__slide"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
               <StepCard
                 icon={
                   <Image
@@ -97,7 +122,7 @@ export default function HowWorks() {
                 title={t("steps.step3.title")}
                 description={t("steps.step3.description")}
               />
-            </div>
+            </motion.div>
           </div>
 
           {/* Bullets */}

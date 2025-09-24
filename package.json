@@ -11,6 +11,7 @@
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "classnames": "^2.5.1",
+    "framer-motion": "^12.23.19",
     "keen-slider": "^6.8.6",
     "lenis": "^1.3.11",
     "next": "15.5.3",
