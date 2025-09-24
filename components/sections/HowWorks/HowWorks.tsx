@@ -7,9 +7,11 @@ import "keen-slider/keen-slider.css";
 import { useKeenSlider } from "keen-slider/react";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useIsDesktop } from "@/utils/useIsDesktop";
 
 export default function HowWorks() {
   const t = useTranslations("HomePage.how");
+  const isDesktop = useIsDesktop();
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
@@ -29,8 +31,11 @@ export default function HowWorks() {
     },
   });
 
+  // Componente condicional
+  const SlideWrapper = isDesktop ? motion.div : "div";
+
   return (
-    <section className="-10 relative w-full overflow-hidden py-48 text-white">
+    <section className="-10 relative w-full py-48 text-white">
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -61,12 +66,14 @@ export default function HowWorks() {
         {/* Steps → vira slider no mobile */}
         <div className="w-full max-w-6xl px-4">
           <div ref={sliderRef} className="keen-slider">
-            <motion.div
+            <SlideWrapper
               className="keen-slider__slide"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
+              {...(isDesktop && {
+                initial: { opacity: 0, y: 40 },
+                whileInView: { opacity: 1, y: 0 },
+                transition: { duration: 0.6 },
+                viewport: { once: true },
+              })}
             >
               <StepCard
                 icon={
@@ -80,14 +87,16 @@ export default function HowWorks() {
                 title={t("steps.step1.title")}
                 description={t("steps.step1.description")}
               />
-            </motion.div>
+            </SlideWrapper>
 
-            <motion.div
+            <SlideWrapper
               className="keen-slider__slide"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
+              {...(isDesktop && {
+                initial: { opacity: 0, y: 40 },
+                whileInView: { opacity: 1, y: 0 },
+                transition: { duration: 0.6, delay: 0.2 },
+                viewport: { once: true },
+              })}
             >
               <StepCard
                 icon={
@@ -101,14 +110,16 @@ export default function HowWorks() {
                 title={t("steps.step2.title")}
                 description={t("steps.step2.description")}
               />
-            </motion.div>
+            </SlideWrapper>
 
-            <motion.div
+            <SlideWrapper
               className="keen-slider__slide"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
+              {...(isDesktop && {
+                initial: { opacity: 0, y: 40 },
+                whileInView: { opacity: 1, y: 0 },
+                transition: { duration: 0.6, delay: 0.4 },
+                viewport: { once: true },
+              })}
             >
               <StepCard
                 icon={
@@ -122,7 +133,7 @@ export default function HowWorks() {
                 title={t("steps.step3.title")}
                 description={t("steps.step3.description")}
               />
-            </motion.div>
+            </SlideWrapper>
           </div>
 
           {/* Bullets */}

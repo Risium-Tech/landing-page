@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer className="bg-blue-dark text-white" id="contact">
       {/* Newsletter */}
-      <div className="border-yellow-normal bg-blue-dark space-y-9 border-t-4 py-16 text-center">
+      <div className="border-yellow-normal bg-blue-dark space-y-9 border-t-4 px-4 py-16 text-center md:px-0">
         <h2 className="text-2xl font-bold">{t("newsletter.title")}</h2>
         <form className="mx-auto flex w-full max-w-lg overflow-hidden rounded-full bg-white">
           <input
@@ -38,7 +38,7 @@ export default function Footer() {
       </div>
 
       {/* Links */}
-      <div className="container mx-auto flex justify-between border-t border-b border-gray-700 py-24">
+      <div className="container mx-auto flex flex-wrap justify-between border-t border-b border-gray-700 px-4 py-24 md:px-0">
         {/* Contato */}
         <div className="space-y-4">
           <h3 className="font-bold uppercase">{t("contact.title")}</h3>
