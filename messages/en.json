@@ -1,0 +1,148 @@
+{
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "how": "How it Works",
+    "benefits": "Benefits",
+    "feedbacks": "Feedbacks",
+    "contact": "Contact",
+    "download": "Download Now",
+    "language": "Language"
+  },
+  "HomePage": {
+    "seo": {
+      "title": "Welcome to Up Connections",
+      "description": "Connecting ideas and people for real solutions"
+    },
+    "title": "Welcome to Up Connections",
+    "description": "Connecting ideas and people into real solutions",
+    "hero": {
+      "title": "TRANSFORM THE STADIUM EXPERIENCE:",
+      "subtitle": "feel the crowd like never before.",
+      "cta": "EXPLORE NOW",
+      "call": "Join sports events in a unique way: choose your seat, take part in collective mosaics, and interact with other fans."
+    },
+    "about": {
+      "title": "ABOUT THE APP:",
+      "text": "Up is a pioneering platform that organizes and enhances the fan experience inside the stadium. More than just watching the game, each fan becomes part of a collective artwork: mosaics that come to life with the light from a flashlight or phone screen, all synchronized in real time.",
+      "imageAlt": "Fan in stadium with mosaic"
+    },
+    "how": {
+      "title": "HOW IT WORKS:",
+      "subtitle": "Three simple steps to become part of the show",
+      "steps": {
+        "step1": {
+          "title": "1. We detect your presence in the stadium",
+          "description": "Geolocation confirms where you're sitting.",
+          "alt": "Football player icon"
+        },
+        "step2": {
+          "title": "2. We sync your position to the mosaic",
+          "description": "The app calculates exactly when your phone should light up.",
+          "alt": "Geolocation icon"
+        },
+        "step3": {
+          "title": "3. The stands become a spectacle",
+          "description": "Each fan helps form the image, team name or collective message.",
+          "alt": "Celebration stars icon"
+        }
+      }
+    },
+    "benefits": {
+      "title": "BENEFITS AND DIFFERENTIALS:",
+      "subtitle": "Discover why Up is unique in the sports world",
+      "cards": {
+        "card1": {
+          "title": "Automatic and synchronized mosaics",
+          "description": "Everything is organized by the app—no paper, no errors, no hassle.",
+          "alt": "Synchronized mosaic icon"
+        },
+        "card2": {
+          "title": "Geolocation technology",
+          "description": "Each fan is identified in their seat and becomes part of the show.",
+          "alt": "Stadium geolocation icon"
+        },
+        "card3": {
+          "title": "Integrated social network",
+          "description": "Share photos and videos, post moments, and even publish directly to Instagram.",
+          "alt": "Social network icon"
+        },
+        "card4": {
+          "title": "Opportunities for sponsors",
+          "description": "Advertising spaces and exclusive activations inside the app.",
+          "alt": "Marketing icon"
+        },
+        "card5": {
+          "title": "Innovation and pioneering spirit",
+          "description": "The first solution to combine collective experiences, social media, and fan data in one platform.",
+          "alt": "Innovation icon"
+        }
+      },
+      "cta": "Download Now"
+    },
+    "inspiration": {
+      "text": "THOUSANDS OF VOICES, ONE LIGHT: THE POWER OF UNITED FANS.",
+      "alt": "Soccer ball icon"
+    },
+    "feedbacks": {
+      "backgroundAlt": "Stadium background",
+      "title": "FEEDBACKS:",
+      "subtitle": "What our users say",
+      "cards": {
+        "card1": {
+          "name": "Lucas Andrade",
+          "role": "Passionate Fan",
+          "feedback": "I never thought my phone could be part of the stadium celebration. When I saw the mosaic taking shape, I felt like I was part of something bigger. It was exciting to take part in this collective experience.",
+          "altAvatar": "Photo of fan Lucas Andrade",
+          "quoteBgAlt": "Stylized quote background",
+          "quoteIconAlt": "Decorative quote icon"
+        },
+        "card2": {
+          "name": "Mariana Costa",
+          "role": "Sports Marketing Manager",
+          "feedback": "Up brought innovation and excitement to our game. We managed to engage thousands of fans in a unique way, with no logistical complications and with an impressive visual impact.",
+          "altAvatar": "Photo of fan Mariana Costa",
+          "quoteBgAlt": "Stylized quote background",
+          "quoteIconAlt": "Decorative quote icon"
+        },
+        "card3": {
+          "name": "Ricardo Menezes",
+          "role": "Partner Brand Marketing Director",
+          "feedback": "With Up we managed to connect our brand directly to the emotion of the crowd. The reach and brand recall were far greater than any traditional action we had ever done in the stadium.",
+          "altAvatar": "Photo of fan Ricardo Menezes",
+          "quoteBgAlt": "Stylized quote background",
+          "quoteIconAlt": "Decorative quote icon"
+        }
+      }
+    },
+    "download": {
+      "title": "READY TO EXPERIENCE THE FANS IN A NEW WAY?",
+      "subtitle": "Imagine thousands of fans turning the stadium into a living mosaic, all connected through the same app. This is the revolution we are bringing.",
+      "googlePlayAlt": "Get it on Google Play",
+      "appStoreAlt": "Download on the App Store"
+    }
+  },
+  "Footer": {
+    "newsletter": {
+      "title": "SUBSCRIBE AND RECEIVE OUR EXCLUSIVE CONTENT.",
+      "placeholder": "Enter your email",
+      "button": "SEND"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "links": {
+      "title": "Useful Links",
+      "home": "Home",
+      "about": "About",
+      "how": "How It Works",
+      "benefits": "Benefits",
+      "feedbacks": "Feedbacks",
+      "contact": "Contact"
+    },
+    "social": {
+      "title": "Social Media"
+    },
+    "rights": "Connecting Fans, Creating Memories. – All rights reserved."
+  }
+}

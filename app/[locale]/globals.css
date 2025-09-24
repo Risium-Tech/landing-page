@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: #171717;
+}
+
+@theme inline {
+  /* System tokens */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Blue */
+  --color-blue-light: #e0f2ff;
+  --color-blue-light-hover: #dbe8f2;
+  --color-blue-light-active: #abc0e6;
+  --color-blue-normal: #1054a6;
+  --color-blue-normal-hover: #0c5c9b;
+  --color-blue-normal-active: #0f5892;
+  --color-blue-dark: #001624;
+  --color-blue-dark-hover: #153c56;
+  --color-blue-dark-active: #0a1c26;
+  --color-blue-darker: #042048;
+
+  /* Green */
+  --color-green-light: #d6f1e6;
+  --color-green-light-hover: #d1efde;
+  --color-green-light-active: #90d2b6;
+  --color-green-normal: #0e9a62;
+  --color-green-normal-hover: #0a9462;
+  --color-green-normal-active: #0d7262;
+  --color-green-dark: #0b3b23;
+  --color-green-dark-hover: #174536;
+  --color-green-dark-active: #0c3c2a;
+  --color-green-darker: #093937;
+
+  /* Yellow */
+  --color-yellow-light: #fffaed;
+  --color-yellow-light-hover: #fff5e6;
+  --color-yellow-light-active: #f5dc8b;
+  --color-yellow-normal: #fcc444;
+  --color-yellow-normal-hover: #e3a046;
+  --color-yellow-normal-active: #cd9a36;
+  --color-yellow-dark: #9f7f25;
+  --color-yellow-dark-hover: #87752f;
+  --color-yellow-dark-active: #715823;
+  --color-yellow-darker: #574321;
+
+  /* White */
+  --color-white-light: #ffffff;
+  --color-white-light-hover: #ffffff;
+  --color-white-light-active: #ffffff;
+  --color-white-normal: #ffffff;
+  --color-white-normal-hover: #e6e6e6;
+  --color-white-normal-active: #cccccc;
+  --color-white-dark: #bfbfbf;
+  --color-white-dark-hover: #999999;
+  --color-white-dark-active: #737373;
+  --color-white-darker: #595959;
+
+  /* Black */
+  --color-black-light: #e6e6e6;
+  --color-black-light-hover: #d9d9d9;
+  --color-black-light-active: #b0b0b0;
+  --color-black-normal: #000000;
+  --color-black-normal-hover: #000000;
+  --color-black-normal-active: #000000;
+  --color-black-dark: #000000;
+  --color-black-dark-hover: #000000;
+  --color-black-dark-active: #000000;
+  --color-black-darker: #000000;
+
+  /* Gray */
+  --color-gray-light: #fafafa;
+  --color-gray-light-hover: #f1f1f1;
+  --color-gray-light-active: #f6f6f6;
+  --color-gray-normal: #f6f6f6;
+  --color-gray-normal-hover: #dddddd;
+  --color-gray-normal-active: #c5c5c5;
+  --color-gray-dark: #9e9e9e;
+  --color-gray-dark-hover: #8e8e8e;
+  --color-gray-dark-active: #6f6f6f;
+  --color-gray-darker: #595959;
+
+  /* Gradient tokens */
+  --gradient-blue-green: linear-gradient(180.37deg, #0166aa 20.98%, #00a6a2 101.22%);
+
+  --gradient-yellow: linear-gradient(236.56deg, #ffd587 -24.12%, #fbba2a 125.82%);
+
+  --shadow-card:
+    0px -2px 6px rgba(0, 0, 0, 0.03), 4px 6px 12px rgba(0, 0, 0, 0.06),
+    4px 22px 36px rgba(0, 0, 0, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
