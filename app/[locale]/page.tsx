@@ -10,8 +10,8 @@ import Feedback from "@/components/sections/Feedback/Feedback";
 import DownloadBanner from "@/components/sections/DownloadBanner/DownloadBanner";
 import Footer from "@/components/layout/Footer";
 
-export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }) => {
-  const { locale } = await params;
+export const generateMetadata = async ({ params }: { params: { locale: string } }) => {
+  const { locale } = params;
 
   return generateSeoMetadata({
     locale,
@@ -25,14 +25,40 @@ export default async function HomePage() {
   return (
     <>
       <Header />
-      <HeroBanner />
-      <About />
-      <HowWorks />
-      <Benefits />
-      <InspirationText text={t("inspiration.text")} alt={t("inspiration.alt")} />
-      <Feedback />
-      <DownloadBanner />
-      <Footer />
+
+      <main>
+        <section id="home">
+          <HeroBanner />
+        </section>
+
+        <section id="about">
+          <About />
+        </section>
+
+        <section id="how">
+          <HowWorks />
+        </section>
+
+        <section id="benefits">
+          <Benefits />
+        </section>
+
+        <section id="inspiration">
+          <InspirationText text={t("inspiration.text")} alt={t("inspiration.alt")} />
+        </section>
+
+        <section id="feedbacks">
+          <Feedback />
+        </section>
+
+        <section id="download">
+          <DownloadBanner />
+        </section>
+      </main>
+
+      <footer id="contact">
+        <Footer />
+      </footer>
     </>
   );
 }

@@ -9,12 +9,12 @@ import GradientButton from "../ui/GradientButton";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navItems = [
-  { key: "home", href: "/" },
-  { key: "about", href: "/about" },
-  { key: "how", href: "/how-it-works" },
-  { key: "benefits", href: "/benefits" },
-  { key: "feedbacks", href: "/feedbacks" },
-  { key: "contact", href: "/contact" },
+  { key: "home", href: "#home" },
+  { key: "about", href: "#about" },
+  { key: "how", href: "#how" },
+  { key: "benefits", href: "#benefits" },
+  { key: "feedbacks", href: "#feedbacks" },
+  { key: "contact", href: "#contact" },
 ];
 
 const languages = [
@@ -55,28 +55,35 @@ export default function Header() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const handleScroll = (id: string) => {
+    const lenis = (window as any).lenis;
+    if (lenis) {
+      lenis.scrollTo(id); // scroll suave
+    } else {
+      const el = document.querySelector(id);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false);
+  };
+
   return (
     <header className="border-yellow-normal sticky top-0 z-50 border-b-4 bg-white shadow-sm">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <Link href="/">
+        <Link href="#home" onClick={() => handleScroll("#home")}>
           <Image src="/svg/logo.svg" alt="Up Connections" width={70} height={40} />
         </Link>
 
-        {/* Nav (desktop) */}
+        {/* Nav desktop */}
         <nav className="hidden items-center space-x-8 lg:flex">
           {navItems.map((item) => (
-            <Link
+            <button
               key={item.key}
-              href={item.href}
-              className={`text-sm font-semibold tracking-wide uppercase ${
-                pathname === item.href
-                  ? "text-blue-normal"
-                  : "text-gray-dark hover:text-blue-normal"
-              }`}
+              onClick={() => handleScroll(item.href)}
+              className="text-gray-dark hover:text-blue-normal text-sm font-semibold tracking-wide uppercase"
             >
               {t(item.key)}
-            </Link>
+            </button>
           ))}
         </nav>
 
@@ -134,30 +141,22 @@ export default function Header() {
       </div>
 
       {/* Mobile nav */}
-      <div
-        className={`overflow-hidden bg-white shadow-lg transition-all duration-300 ease-in-out lg:hidden ${
-          isOpen ? "max-h-[500px] py-4" : "max-h-0 py-0"
-        }`}
-      >
-        <nav className="flex flex-col space-y-3 px-4">
+      {isOpen && (
+        <nav className="flex flex-col space-y-3 bg-white px-4 py-4 shadow-lg lg:hidden">
           {navItems.map((item) => (
-            <Link
+            <button
               key={item.key}
-              href={item.href}
-              className={`text-sm font-semibold uppercase ${
-                pathname === item.href
-                  ? "text-blue-normal"
-                  : "text-gray-dark hover:text-blue-normal"
-              }`}
+              onClick={() => handleScroll(item.href)}
+              className="text-gray-dark hover:text-blue-normal text-sm font-semibold uppercase"
             >
               {t(item.key)}
-            </Link>
+            </button>
           ))}
           <GradientButton href="/download" className="text-center text-sm">
             {t("download")}
           </GradientButton>
         </nav>
-      </div>
+      )}
     </header>
   );
 }
