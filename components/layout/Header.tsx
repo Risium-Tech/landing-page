@@ -67,7 +67,6 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile dropdown menu com animação */}
       <div
         className={`overflow-hidden bg-white shadow-lg transition-all duration-300 ease-in-out lg:hidden ${
           isOpen ? "max-h-[500px] py-4" : "max-h-0 py-0"
