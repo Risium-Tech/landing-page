@@ -40,8 +40,8 @@ export default function Footer() {
             </p>
             <p className="flex items-center gap-2">
               <EnvelopeIcon className="h-5 w-5" />
-              <a href="mailto:contato@upconnection.com" className="hover:underline">
-                contato@upconnection.com
+              <a href="mailto:contato@upconnections.com" className="hover:underline">
+                contato@upconnections.com
               </a>
             </p>
           </div>
@@ -78,11 +78,11 @@ export default function Footer() {
           <ul className="space-y-2">
             <li className="flex items-center gap-2">
               <Image src="/svg/instagram-icon.svg" alt="Instagram" width={20} height={20} />
-              @upconnection
+              @upconnections
             </li>
             <li className="flex items-center gap-2">
               <Image src="/svg/facebook-icon.svg" alt="Facebook" width={20} height={20} />
-              @upconnection
+              @upconnections
             </li>
           </ul>
         </div>
@@ -90,7 +90,7 @@ export default function Footer() {
 
       {/* Copy */}
       <div className="py-6 text-center text-sm text-gray-400">
-        © 2025 <span className="font-bold">Up Connection</span> | {t("rights")}
+        © 2025 <span className="font-bold">Up Connections</span> | {t("rights")}
       </div>
     </footer>
   );

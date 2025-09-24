@@ -17,8 +17,8 @@
     "title": "Welcome to Up Connections",
     "description": "Connecting ideas and people into real solutions",
     "hero": {
-      "title": "TRANSFORM THE STADIUM EXPERIENCE:",
-      "subtitle": "feel the crowd like never before.",
+      "title": "EXPERIENCE THE STADIUM LIKE NEVER BEFORE:",
+      "subtitle": "feel the energy of the crowd.",
       "cta": "EXPLORE NOW",
       "call": "Join sports events in a unique way: choose your seat, take part in collective mosaics, and interact with other fans."
     },
@@ -29,7 +29,7 @@
     },
     "how": {
       "title": "HOW IT WORKS:",
-      "subtitle": "Three simple steps to become part of the show",
+      "subtitle": "Three simple steps to be part of the show",
       "steps": {
         "step1": {
           "title": "1. We detect your presence in the stadium",
@@ -37,12 +37,12 @@
           "alt": "Football player icon"
         },
         "step2": {
-          "title": "2. We sync your position to the mosaic",
+          "title": "2. We sync your position with the mosaic",
           "description": "The app calculates exactly when your phone should light up.",
           "alt": "Geolocation icon"
         },
         "step3": {
-          "title": "3. The stands become a spectacle",
+          "title": "3. The stands turn into a spectacle",
           "description": "Each fan helps form the image, team name or collective message.",
           "alt": "Celebration stars icon"
         }
@@ -50,7 +50,7 @@
     },
     "benefits": {
       "title": "BENEFITS AND DIFFERENTIALS:",
-      "subtitle": "Discover why Up is unique in the sports world",
+      "subtitle": "Why Up is unique in the sports world",
       "cards": {
         "card1": {
           "title": "Automatic and synchronized mosaics",
@@ -116,7 +116,7 @@
       }
     },
     "download": {
-      "title": "READY TO EXPERIENCE THE FANS IN A NEW WAY?",
+      "title": "READY TO EXPERIENCE FANDOM IN A WHOLE NEW WAY?",
       "subtitle": "Imagine thousands of fans turning the stadium into a living mosaic, all connected through the same app. This is the revolution we are bringing.",
       "googlePlayAlt": "Get it on Google Play",
       "appStoreAlt": "Download on the App Store"

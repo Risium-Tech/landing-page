@@ -2,11 +2,11 @@
   "Header": {
     "home": "Inicio",
     "about": "Acerca de",
-    "how": "Cómo Funciona",
+    "how": "Cómo funciona",
     "benefits": "Beneficios",
     "feedbacks": "Reseñas",
     "contact": "Contacto",
-    "download": "Descargar Ahora",
+    "download": "Descargar ahora",
     "language": "Idioma"
   },
   "HomePage": {
@@ -15,116 +15,116 @@
       "description": "Conectando ideas y personas para soluciones reales"
     },
     "title": "Bienvenido a Up Connections",
-    "description": "Conectando ideas y personas para soluciones reales",
+    "description": "Conectando ideas y personas para crear soluciones reales",
     "hero": {
-      "title": "TRANSFORMA LA EXPERIENCIA EN EL ESTADIO:",
-      "subtitle": "vive la afición como nunca antes.",
-      "cta": "DESCÚBRELO AHORA",
-      "call": "Participa en eventos deportivos de una forma única: elige tu asiento, forma parte de mosaicos colectivos e interactúa con otros aficionados."
+      "title": "VIVE EL ESTADIO COMO NUNCA ANTES:",
+      "subtitle": "siente la pasión de la hinchada.",
+      "cta": "DESCÚBRELO",
+      "call": "Participa en los eventos deportivos de una forma única: elige tu asiento, forma parte de mosaicos colectivos e interactúa con otros aficionados."
     },
     "about": {
       "title": "SOBRE LA APP:",
-      "text": "Up es una plataforma pionera que organiza y potencia la experiencia de la afición dentro del estadio. Más que ver el partido, cada aficionado forma parte de una obra colectiva: mosaicos que cobran vida con la luz de la linterna o la pantalla del móvil, todo sincronizado en tiempo real.",
-      "imageAlt": "Aficionado en el estadio con mosaico"
+      "text": "Up es una plataforma pionera que organiza y potencia la experiencia de los aficionados en el estadio. Más que ver el partido, cada hincha se convierte en parte de una obra colectiva: mosaicos que cobran vida con la luz del móvil, todo sincronizado en tiempo real.",
+      "imageAlt": "Hincha en el estadio con mosaico"
     },
     "how": {
-      "title": "¿CÓMO FUNCIONA?",
-      "subtitle": "Tres pasos sencillos para formar parte del espectáculo",
+      "title": "CÓMO FUNCIONA:",
+      "subtitle": "Tres pasos sencillos para ser parte del espectáculo",
       "steps": {
         "step1": {
           "title": "1. Detectamos tu presencia en el estadio",
           "description": "La geolocalización confirma dónde estás sentado.",
-          "alt": "Ícono de jugador de fútbol"
+          "alt": "Ícono jugador de fútbol"
         },
         "step2": {
           "title": "2. Sincronizamos tu posición con el mosaico",
-          "description": "La app calcula exactamente cuándo debe encenderse tu móvil.",
+          "description": "La app calcula el momento exacto en que tu móvil debe encenderse.",
           "alt": "Ícono de geolocalización"
         },
         "step3": {
-          "title": "3. Las gradas se convierten en un espectáculo",
-          "description": "Cada aficionado contribuye a formar la imagen, nombre del equipo o mensaje colectivo.",
-          "alt": "Ícono de estrellas de celebración"
+          "title": "3. Las gradas se convierten en un show",
+          "description": "Cada aficionado ayuda a formar la imagen, el nombre del equipo o el mensaje colectivo.",
+          "alt": "Ícono de estrellas"
         }
       }
     },
     "benefits": {
-      "title": "BENEFICIOS Y DIFERENCIALES:",
-      "subtitle": "Descubre por qué Up es único en el mundo deportivo",
+      "title": "BENEFICIOS Y VENTAJAS:",
+      "subtitle": "Por qué Up es único en el mundo deportivo",
       "cards": {
         "card1": {
           "title": "Mosaicos automáticos y sincronizados",
-          "description": "Todo organizado por la app, sin papel, sin errores, sin esfuerzo.",
-          "alt": "Ícono de mosaico sincronizado"
+          "description": "Todo organizado por la app, sin papel, sin errores y sin complicaciones.",
+          "alt": "Ícono mosaico sincronizado"
         },
         "card2": {
           "title": "Tecnología de geolocalización",
-          "description": "Cada aficionado es identificado en su asiento y forma parte del espectáculo.",
-          "alt": "Ícono de geolocalización en el estadio"
+          "description": "Cada hincha se identifica en su asiento y forma parte del show.",
+          "alt": "Ícono geolocalización estadio"
         },
         "card3": {
           "title": "Red social integrada",
-          "description": "Comparte fotos y videos, publica momentos e incluso directamente en Instagram.",
-          "alt": "Ícono de red social"
+          "description": "Comparte fotos y videos, publica momentos e incluso directo en Instagram.",
+          "alt": "Ícono red social"
         },
         "card4": {
           "title": "Oportunidades para patrocinadores",
           "description": "Espacios publicitarios y activaciones exclusivas dentro de la app.",
-          "alt": "Ícono de marketing"
+          "alt": "Ícono marketing"
         },
         "card5": {
           "title": "Innovación y espíritu pionero",
-          "description": "Primera solución en unir experiencia colectiva, redes sociales y datos de hinchas en una sola plataforma.",
-          "alt": "Ícono de innovación"
+          "description": "La primera solución que une experiencias colectivas, redes sociales y datos de hinchas en una sola plataforma.",
+          "alt": "Ícono innovación"
         }
       },
-      "cta": "Descargar Ahora"
+      "cta": "Descargar ahora"
     },
     "inspiration": {
       "text": "MILES DE VOCES, UNA SOLA LUZ: LA FUERZA DE LA HINCHADA UNIDA.",
-      "alt": "Ícono de balón de fútbol"
+      "alt": "Ícono balón de fútbol"
     },
     "feedbacks": {
       "backgroundAlt": "Fondo del estadio",
-      "title": "FEEDBACKS:",
+      "title": "RESEÑAS:",
       "subtitle": "Lo que dicen nuestros usuarios",
       "cards": {
         "card1": {
           "name": "Lucas Andrade",
-          "role": "Hincha Apasionado",
-          "feedback": "Nunca pensé que mi celular pudiera ser parte de la fiesta en el estadio. Cuando vi el mosaico tomando forma, sentí que era parte de algo más grande. Fue emocionante participar en esta experiencia colectiva.",
-          "altAvatar": "Foto del hincha Lucas Andrade",
-          "quoteBgAlt": "Fondo estilizado de comillas",
+          "role": "Hincha apasionado",
+          "feedback": "Nunca pensé que mi móvil pudiera ser parte de la fiesta en el estadio. Cuando vi el mosaico tomando forma, sentí que era parte de algo más grande. Fue emocionante vivir esta experiencia colectiva.",
+          "altAvatar": "Foto de Lucas Andrade",
+          "quoteBgAlt": "Fondo de comillas estilizado",
           "quoteIconAlt": "Ícono decorativo de comillas"
         },
         "card2": {
           "name": "Mariana Costa",
-          "role": "Gerente de Marketing Deportivo",
-          "feedback": "Up trajo innovación y emoción a nuestro partido. Logramos involucrar a miles de aficionados de una manera única, sin complicaciones logísticas y con un impacto visual impresionante.",
-          "altAvatar": "Foto de la hincha Mariana Costa",
-          "quoteBgAlt": "Fondo estilizado de comillas",
+          "role": "Gerente de marketing deportivo",
+          "feedback": "Up trajo innovación y emoción a nuestro partido. Logramos involucrar a miles de hinchas de una manera única, sin complicaciones logísticas y con un impacto visual increíble.",
+          "altAvatar": "Foto de Mariana Costa",
+          "quoteBgAlt": "Fondo de comillas estilizado",
           "quoteIconAlt": "Ícono decorativo de comillas"
         },
         "card3": {
           "name": "Ricardo Menezes",
-          "role": "Director de Marketing de Marca Socia",
-          "feedback": "Con Up conseguimos conectar nuestra marca directamente con la emoción de la hinchada. El alcance y el recuerdo de marca fueron mucho mayores que cualquier acción tradicional que hubiéramos hecho en el estadio.",
-          "altAvatar": "Foto del hincha Ricardo Menezes",
-          "quoteBgAlt": "Fondo estilizado de comillas",
+          "role": "Director de marketing de marca",
+          "feedback": "Con Up logramos conectar nuestra marca directamente con la emoción de la hinchada. El alcance y el recuerdo de marca superaron cualquier acción tradicional en el estadio.",
+          "altAvatar": "Foto de Ricardo Menezes",
+          "quoteBgAlt": "Fondo de comillas estilizado",
           "quoteIconAlt": "Ícono decorativo de comillas"
         }
       }
     },
     "download": {
-      "title": "¿LISTO PARA VIVIR LA HINCHADA DE UNA MANERA NUEVA?",
-      "subtitle": "Imagina miles de aficionados transformando el estadio en un mosaico vivo, todos conectados por la misma app. Esta es la revolución que estamos trayendo.",
+      "title": "¿LISTO PARA VIVIR LA HINCHADA DE UNA NUEVA MANERA?",
+      "subtitle": "Imagina miles de aficionados transformando el estadio en un mosaico vivo, todos conectados por la misma app. Esta es la revolución que traemos.",
       "googlePlayAlt": "Disponible en Google Play",
-      "appStoreAlt": "Disponible en la App Store"
+      "appStoreAlt": "Disponible en App Store"
     }
   },
   "Footer": {
     "newsletter": {
-      "title": "SUSCRÍBETE Y RECIBE NUESTRO CONTENIDO EXCLUSIVO.",
+      "title": "SUSCRÍBETE Y RECIBE CONTENIDO EXCLUSIVO.",
       "placeholder": "Escribe tu correo",
       "button": "ENVIAR"
     },
@@ -132,17 +132,17 @@
       "title": "Contacto"
     },
     "links": {
-      "title": "Enlaces Útiles",
+      "title": "Enlaces útiles",
       "home": "Inicio",
-      "about": "Sobre Nosotros",
-      "how": "Cómo Funciona",
+      "about": "Acerca de",
+      "how": "Cómo funciona",
       "benefits": "Beneficios",
-      "feedbacks": "Comentarios",
+      "feedbacks": "Reseñas",
       "contact": "Contacto"
     },
     "social": {
-      "title": "Redes Sociales"
+      "title": "Redes sociales"
     },
-    "rights": "Conectando Hinchadas, Creando Recuerdos. – Todos los derechos reservados."
+    "rights": "Conectando hinchas, creando recuerdos. – Todos los derechos reservados."
   }
 }

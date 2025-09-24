@@ -1,0 +1,148 @@
+{
+  "Header": {
+    "home": "Início",
+    "about": "Sobre",
+    "how": "Como Funciona",
+    "benefits": "Benefícios",
+    "feedbacks": "Testemunhos",
+    "contact": "Contacto",
+    "download": "Descarregar Agora",
+    "language": "Idioma"
+  },
+  "HomePage": {
+    "seo": {
+      "title": "Bem-vindo ao Up Connections",
+      "description": "A ligar ideias e pessoas para soluções reais"
+    },
+    "title": "Bem-vindo ao Up Connections",
+    "description": "A ligar ideias e pessoas para soluções reais",
+    "hero": {
+      "title": "TRANSFORME A EXPERIÊNCIA NO ESTÁDIO:",
+      "subtitle": "sinta a emoção dos adeptos como nunca antes.",
+      "cta": "DESCOBRIR AGORA",
+      "call": "Participe em eventos desportivos de forma única: escolha o seu lugar, faça parte de mosaicos coletivos e interaja com outros adeptos."
+    },
+    "about": {
+      "title": "SOBRE A APP:",
+      "text": "O Up é uma plataforma pioneira que organiza e potencia a experiência dos adeptos dentro do estádio. Mais do que assistir ao jogo, cada adepto torna-se parte de uma obra coletiva: mosaicos que ganham vida com a luz da lanterna ou do ecrã do telemóvel, tudo sincronizado em tempo real.",
+      "imageAlt": "Adepto no estádio com mosaico"
+    },
+    "how": {
+      "title": "COMO FUNCIONA:",
+      "subtitle": "Três passos simples para fazer parte do espetáculo",
+      "steps": {
+        "step1": {
+          "title": "1. Detetamos a sua presença no estádio",
+          "description": "A geolocalização confirma onde está sentado.",
+          "alt": "Ícone de jogador de futebol"
+        },
+        "step2": {
+          "title": "2. Sincronizamos a sua posição com o mosaico",
+          "description": "A app calcula exatamente quando o seu telemóvel deve acender.",
+          "alt": "Ícone de geolocalização"
+        },
+        "step3": {
+          "title": "3. A bancada torna-se um espetáculo",
+          "description": "Cada adepto contribui para formar o desenho, nome da equipa ou mensagem coletiva.",
+          "alt": "Ícone de estrelas em celebração"
+        }
+      }
+    },
+    "benefits": {
+      "title": "BENEFÍCIOS E DIFERENCIAIS:",
+      "subtitle": "Descubra porque o Up é único no mundo desportivo",
+      "cards": {
+        "card1": {
+          "title": "Mosaicos automáticos e sincronizados",
+          "description": "Tudo organizado pela app, sem papel, sem erros, sem esforço.",
+          "alt": "Ícone de mosaico sincronizado"
+        },
+        "card2": {
+          "title": "Tecnologia de geolocalização",
+          "description": "Cada adepto é identificado no seu lugar e faz parte do espetáculo.",
+          "alt": "Ícone de geolocalização no estádio"
+        },
+        "card3": {
+          "title": "Rede social integrada",
+          "description": "Partilhe fotos e vídeos, publique momentos e até diretamente no Instagram.",
+          "alt": "Ícone de rede social"
+        },
+        "card4": {
+          "title": "Oportunidades para patrocinadores",
+          "description": "Espaços publicitários e ativações exclusivas dentro da app.",
+          "alt": "Ícone de marketing"
+        },
+        "card5": {
+          "title": "Inovação e espírito pioneiro",
+          "description": "Primeira solução a unir experiência coletiva, redes sociais e dados de adeptos numa só plataforma.",
+          "alt": "Ícone de inovação"
+        }
+      },
+      "cta": "Descarregar Agora"
+    },
+    "inspiration": {
+      "text": "MILHARES DE VOZES, UMA SÓ LUZ: A FORÇA DOS ADEPTOS UNIDOS.",
+      "alt": "Ícone de bola de futebol"
+    },
+    "feedbacks": {
+      "backgroundAlt": "Fundo do estádio",
+      "title": "TESTEMUNHOS:",
+      "subtitle": "O que dizem os nossos utilizadores",
+      "cards": {
+        "card1": {
+          "name": "Lucas Andrade",
+          "role": "Adepto Apaixonado",
+          "feedback": "Nunca pensei que o meu telemóvel pudesse fazer parte da festa no estádio. Quando vi o mosaico a ganhar forma, senti que fazia parte de algo maior. Foi emocionante participar nesta experiência coletiva.",
+          "altAvatar": "Foto do adepto Lucas Andrade",
+          "quoteBgAlt": "Fundo estilizado de aspas",
+          "quoteIconAlt": "Ícone de aspas decorativo"
+        },
+        "card2": {
+          "name": "Mariana Costa",
+          "role": "Gestora de Marketing Desportivo",
+          "feedback": "O Up trouxe inovação e emoção ao nosso jogo. Conseguimos envolver milhares de adeptos de uma forma única, sem complicações logísticas e com um impacto visual impressionante.",
+          "altAvatar": "Foto da adepta Mariana Costa",
+          "quoteBgAlt": "Fundo estilizado de aspas",
+          "quoteIconAlt": "Ícone de aspas decorativo"
+        },
+        "card3": {
+          "name": "Ricardo Menezes",
+          "role": "Diretor de Marketing de Marca Parceira",
+          "feedback": "Com o Up conseguimos ligar a nossa marca diretamente à emoção dos adeptos. O alcance e a recordação da marca foram muito superiores a qualquer ação tradicional que já tínhamos feito no estádio.",
+          "altAvatar": "Foto do adepto Ricardo Menezes",
+          "quoteBgAlt": "Fundo estilizado de aspas",
+          "quoteIconAlt": "Ícone de aspas decorativo"
+        }
+      }
+    },
+    "download": {
+      "title": "PRONTO PARA VIVER A EMOÇÃO DOS ADEPTOS DE UMA NOVA FORMA?",
+      "subtitle": "Imagine milhares de adeptos a transformar o estádio num mosaico vivo, todos ligados pela mesma app. Esta é a revolução que estamos a trazer.",
+      "googlePlayAlt": "Disponível no Google Play",
+      "appStoreAlt": "Disponível na App Store"
+    }
+  },
+  "Footer": {
+    "newsletter": {
+      "title": "SUBSCREVA E RECEBA O NOSSO CONTEÚDO EXCLUSIVO.",
+      "placeholder": "Digite o seu email",
+      "button": "ENVIAR"
+    },
+    "contact": {
+      "title": "Contacto"
+    },
+    "links": {
+      "title": "Links Úteis",
+      "home": "Início",
+      "about": "Sobre",
+      "how": "Como Funciona",
+      "benefits": "Benefícios",
+      "feedbacks": "Testemunhos",
+      "contact": "Contacto"
+    },
+    "social": {
+      "title": "Redes Sociais"
+    },
+    "rights": "A ligar Adeptos, A Criar Memórias. – Todos os direitos reservados."
+  }
+}

@@ -5,7 +5,7 @@ export async function generateSeoMetadata({
   locale,
   namespace = "Common",
   pathname = "",
-  image = "/og-image.png",
+  image = "/app/locale/favicon.co",
   baseUrl = "https://upconnections.com",
 }: {
   locale: string;
