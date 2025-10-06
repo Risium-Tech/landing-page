@@ -8,12 +8,22 @@ export default function Footer() {
   const t = useTranslations("Footer");
 
   const handleScroll = (id: string) => {
+    const offset = -80;
+
     const lenis = (window as any).lenis;
-    if (lenis) {
-      lenis.scrollTo(id); // scroll suave
-    } else {
-      const el = document.querySelector(id);
-      if (el) el.scrollIntoView({ behavior: "smooth" });
+    const el = document.querySelector(id);
+
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY + offset;
+
+      if (lenis) {
+        lenis.scrollTo(top);
+      } else {
+        window.scrollTo({
+          top,
+          behavior: "smooth",
+        });
+      }
     }
   };
 
@@ -51,7 +61,14 @@ export default function Footer() {
                 height={20}
                 className="opacity-90"
               />
-              +351 920 406 913
+              <a
+                href="https://wa.me/351920406913"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                +351 920 406 913
+              </a>
             </p>
             <p className="flex items-center gap-2">
               <EnvelopeIcon className="h-5 w-5" />
@@ -67,22 +84,34 @@ export default function Footer() {
           <h3 className="font-bold uppercase">{t("links.title")}</h3>
           <ul className="space-y-2">
             <li>
-              <button onClick={() => handleScroll("#home")}>{t("links.home")}</button>
+              <button className="cursor-pointer" onClick={() => handleScroll("#home")}>
+                {t("links.home")}
+              </button>
             </li>
             <li>
-              <button onClick={() => handleScroll("#about")}>{t("links.about")}</button>
+              <button className="cursor-pointer" onClick={() => handleScroll("#about")}>
+                {t("links.about")}
+              </button>
             </li>
             <li>
-              <button onClick={() => handleScroll("#how")}>{t("links.how")}</button>
+              <button className="cursor-pointer" onClick={() => handleScroll("#how")}>
+                {t("links.how")}
+              </button>
             </li>
             <li>
-              <button onClick={() => handleScroll("#benefits")}>{t("links.benefits")}</button>
+              <button className="cursor-pointer" onClick={() => handleScroll("#benefits")}>
+                {t("links.benefits")}
+              </button>
             </li>
             <li>
-              <button onClick={() => handleScroll("#feedbacks")}>{t("links.feedbacks")}</button>
+              <button className="cursor-pointer" onClick={() => handleScroll("#feedbacks")}>
+                {t("links.feedbacks")}
+              </button>
             </li>
             <li>
-              <button onClick={() => handleScroll("#contact")}>{t("links.contact")}</button>
+              <button className="cursor-pointer" onClick={() => handleScroll("#contact")}>
+                {t("links.contact")}
+              </button>
             </li>
           </ul>
         </div>
@@ -95,9 +124,23 @@ export default function Footer() {
               <Image src="/svg/instagram-icon.svg" alt="Instagram" width={20} height={20} />
               @upconnections
             </li>
+
             <li className="flex items-center gap-2">
-              <Image src="/svg/facebook-icon.svg" alt="Facebook" width={20} height={20} />
-              @upconnections
+              <a
+                href="https://www.linkedin.com/company/up-connections/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:underline"
+              >
+                <Image
+                  src="/svg/linkedin-icon.svg"
+                  alt="LinkedIn"
+                  width={18}
+                  height={18}
+                  className="brightness-0 contrast-200 invert saturate-0"
+                />
+                up-connections
+              </a>
             </li>
           </ul>
         </div>

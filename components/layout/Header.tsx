@@ -56,14 +56,23 @@ export default function Header() {
   }, []);
 
   const handleScroll = (id: string) => {
+    const offset = -80;
+
     const lenis = (window as any).lenis;
-    if (lenis) {
-      lenis.scrollTo(id); // scroll suave
-    } else {
-      const el = document.querySelector(id);
-      if (el) el.scrollIntoView({ behavior: "smooth" });
+    const el = document.querySelector(id);
+
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY + offset;
+
+      if (lenis) {
+        lenis.scrollTo(top);
+      } else {
+        window.scrollTo({
+          top,
+          behavior: "smooth",
+        });
+      }
     }
-    setIsOpen(false);
   };
 
   return (
