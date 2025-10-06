@@ -44,7 +44,13 @@ export default function Footer() {
           <h3 className="font-bold uppercase">{t("contact.title")}</h3>
           <div className="space-y-2">
             <p className="flex items-center gap-2">
-              <PhoneIcon className="h-5 w-5" />
+              <Image
+                src="/svg/phone-icon.svg"
+                alt="Telefone"
+                width={20}
+                height={20}
+                className="opacity-90"
+              />
               +351 920 406 913
             </p>
             <p className="flex items-center gap-2">
