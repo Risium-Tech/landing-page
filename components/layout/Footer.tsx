@@ -1,30 +1,19 @@
 "use client";
 
+import { scrollToSection } from "@/utils/scrollToSection";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Footer() {
   const t = useTranslations("Footer");
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
 
   const handleScroll = (id: string) => {
-    const offset = -80;
-
-    const lenis = (window as any).lenis;
-    const el = document.querySelector(id);
-
-    if (el) {
-      const top = el.getBoundingClientRect().top + window.scrollY + offset;
-
-      if (lenis) {
-        lenis.scrollTo(top);
-      } else {
-        window.scrollTo({
-          top,
-          behavior: "smooth",
-        });
-      }
-    }
+    scrollToSection(id, locale, pathname, router);
   };
 
   return (

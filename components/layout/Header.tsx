@@ -7,6 +7,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import GradientButton from "../ui/GradientButton";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { scrollToSection } from "@/utils/scrollToSection";
 
 const navItems = [
   { key: "home", href: "#home" },
@@ -56,23 +57,7 @@ export default function Header() {
   }, []);
 
   const handleScroll = (id: string) => {
-    const offset = -80;
-
-    const lenis = (window as any).lenis;
-    const el = document.querySelector(id);
-
-    if (el) {
-      const top = el.getBoundingClientRect().top + window.scrollY + offset;
-
-      if (lenis) {
-        lenis.scrollTo(top);
-      } else {
-        window.scrollTo({
-          top,
-          behavior: "smooth",
-        });
-      }
-    }
+    scrollToSection(id, locale, pathname, router);
   };
 
   return (
