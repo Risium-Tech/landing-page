@@ -1,6 +1,6 @@
 "use client";
 
-import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -29,7 +29,6 @@ export default function Footer() {
 
   return (
     <footer className="bg-blue-dark text-white" id="contact">
-      {/* Newsletter */}
       <div className="border-yellow-normal bg-blue-dark space-y-9 border-t-4 px-4 py-16 text-center md:px-0">
         <h2 className="text-2xl font-bold">{t("newsletter.title")}</h2>
         <form className="mx-auto flex w-full max-w-lg overflow-hidden rounded-full bg-white">
@@ -47,9 +46,7 @@ export default function Footer() {
         </form>
       </div>
 
-      {/* Links */}
       <div className="container mx-auto flex flex-wrap justify-between border-t border-b border-gray-700 px-4 py-24 md:px-0">
-        {/* Contato */}
         <div className="space-y-4">
           <h3 className="font-bold uppercase">{t("contact.title")}</h3>
           <div className="space-y-2">
@@ -79,7 +76,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Links úteis */}
         <div className="space-y-4">
           <h3 className="font-bold uppercase">{t("links.title")}</h3>
           <ul className="space-y-2">
@@ -116,7 +112,22 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Social */}
+        <div className="space-y-4">
+          <h3 className="font-bold uppercase">{t("terms.title")}</h3>
+          <ul className="space-y-2">
+            <li>
+              <a href="/terms-conditions" className="cursor-pointer hover:underline">
+                {t("terms.terms")}
+              </a>
+            </li>
+            <li>
+              <a href="/privacy-policy" className="cursor-pointer hover:underline">
+                {t("terms.privacy")}
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <div className="space-y-4">
           <h3 className="font-bold uppercase">{t("social.title")}</h3>
           <ul className="space-y-2">
@@ -146,7 +157,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Copy */}
       <div className="py-6 text-center text-sm text-gray-400">
         © 2025 <span className="font-bold">Up Connections</span> | {t("rights")}
       </div>

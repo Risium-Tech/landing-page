@@ -140,9 +140,241 @@
       "feedbacks": "Feedbacks",
       "contact": "Contact"
     },
+    "terms": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    },
     "social": {
       "title": "Social Media"
     },
     "rights": "Connecting Fans, Creating Memories. – All rights reserved."
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "intro": "Up Connections (“we”, “our”, “company”) values your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, share, and safeguard your information when you use our app, website, and associated services.",
+    "sections": {
+      "1": {
+        "title": "1. Information We Collect",
+        "paragraphs": [
+          "We collect only the data necessary to provide our services and improve your experience in the app. The categories of data may include:"
+        ],
+        "list": [
+          "Identification data: name, email, profile photo (if provided).",
+          "Usage data: interactions in the app, mosaic participation, actions within events.",
+          "Approximate geolocation: used only during events to synchronize mosaics and detect your seat.",
+          "Technical data: device model, operating system, language, app version, anonymized IP address.",
+          "User-generated content: photos, videos, comments, posts, and interactions with other users."
+        ],
+        "footer": "We never collect sensitive data without explicit consent and do not collect background data without necessity."
+      },
+
+      "2": {
+        "title": "2. How We Use Your Data",
+        "paragraphs": ["We use your information to:"],
+        "list": [
+          "ensure the proper functioning of the app;",
+          "enable synchronization of light mosaics during events;",
+          "personalize the experience according to your profile and language;",
+          "improve our services and develop new features;",
+          "generate metrics, analyses, and usage statistics in an aggregated and non-identifiable format;",
+          "ensure platform security and prevent abuse;",
+          "send important notifications related to the app;",
+          "respond to support, contact, and user rights requests."
+        ],
+        "footer": "Metrics and statistics generated for clubs, event organizers, and sports partners include only aggregated information such as participation levels, engagement volume, mosaic intensity, and usage patterns. These data do not personally identify users."
+      },
+
+      "3": {
+        "title": "3. Information Sharing",
+        "paragraphs": [
+          "We do not share identifiable personal data with third parties for commercial purposes. However, we may share aggregated, statistical, or anonymized information with authorized partners, which does not allow for individual identification."
+        ],
+        "list": [
+          "Technology partners: companies responsible for infrastructure, hosting, data processing, and analytics tools.",
+          "Clubs, event organizers, and sports partners: receive aggregated metrics about participation, mosaic engagement, and usage patterns, always without personal data.",
+          "Commercial partners: anonymized analyses and insights for research, improvements, and statistical studies.",
+          "Legal authorities: when required by court order, investigation, or applicable legal obligation."
+        ],
+        "footer": "All data sharing complies with the LGPD and other applicable laws. No sensitive or identifiable personal data is sold, commercialized, or transferred to third parties without your explicit consent."
+      },
+
+      "4": {
+        "title": "4. Legal Basis for Processing",
+        "paragraphs": ["We process your data based on the following legal grounds under the LGPD:"],
+        "list": [
+          "Consent: geolocation and notifications.",
+          "Performance of a contract: to provide the core functionality of the app.",
+          "Legitimate interest: service improvements and fraud prevention.",
+          "Compliance with legal obligations: when required."
+        ]
+      },
+
+      "5": {
+        "title": "5. Data Security",
+        "paragraphs": [
+          "We apply appropriate technical and organizational measures to protect your data from unauthorized access, loss, destruction, misuse, or improper disclosure. However, no digital system is 100% secure."
+        ]
+      },
+
+      "6": {
+        "title": "6. Data Retention and Deletion",
+        "paragraphs": [
+          "We keep your data only for as long as necessary to fulfill the purposes outlined in this policy. You may request complete deletion of your account and data at any time through our official channels."
+        ]
+      },
+
+      "7": {
+        "title": "7. Your Rights",
+        "paragraphs": ["Under the LGPD, you have the right to:"],
+        "list": [
+          "access your personal data;",
+          "correct incomplete or outdated data;",
+          "request deletion or anonymization;",
+          "request data portability;",
+          "withdraw consent;",
+          "obtain information about data sharing."
+        ],
+        "footer": "To exercise your rights, please contact us using the channels listed below."
+      },
+
+      "8": {
+        "title": "8. Children and Adolescents",
+        "paragraphs": [
+          "The app is not intended for children under 13. We do not knowingly collect data from minors in this age group. If such data is collected unintentionally, it will be promptly removed after notification."
+        ]
+      },
+
+      "9": {
+        "title": "9. International Data Transfers",
+        "paragraphs": [
+          "Some of our servers and technology partners may be located outside Brazil. In such cases, we ensure that all transfers comply with appropriate protection standards under LGPD and GDPR."
+        ]
+      },
+
+      "10": {
+        "title": "10. Policy Updates",
+        "paragraphs": [
+          "We may update this Privacy Policy periodically. Relevant changes will be communicated through the app or our official channels."
+        ]
+      },
+
+      "11": {
+        "title": "11. Contact",
+        "paragraphs": [
+          "If you have questions about this Privacy Policy or wish to exercise your rights, contact our team at comercial@upconnections-app.com."
+        ]
+      }
+    }
+  },
+  "termsConditions": {
+    "title": "Terms & Conditions",
+    "intro": "Welcome to the Up Connections app. These Terms & Conditions govern the use of the app, services, and platform provided by Up Connections (“we”, “our”, “company”). By using the app or services, you (“user”, “you”) agree to these Terms and to our Privacy Policy.",
+    "sections": {
+      "1": {
+        "title": "1. Definitions",
+        "paragraphs": [
+          "App: refers to the Up Connections mobile software available on the App Store and Google Play.",
+          "Services: features offered by the app — such as stadium seat detection, synchronized light mosaics, fan social network, photo/video sharing, interactions, and other resources.",
+          "Account: the user profile created to access the services.",
+          "Event: the sports event or venue where the app is used and where mosaics or interactions take place."
+        ]
+      },
+
+      "2": {
+        "title": "2. Use of the App and Services",
+        "paragraphs": [
+          "a) The app is intended for fans and event participants who want to engage in interactive experiences (such as light mosaics) and use community features.",
+          "b) You agree to use the app lawfully, respecting applicable legislation, stadium/event regulations, our community guidelines, and these Terms.",
+          "c) You may not use the app in a way that negatively affects the experience of other users or the event, including interfering with the mosaic synchronization system or geolocation."
+        ]
+      },
+
+      "3": {
+        "title": "3. User Account, Credentials, and Responsibilities",
+        "paragraphs": [
+          "a) Certain services may require creating an account and providing true, complete, and updated information.",
+          "b) You are responsible for maintaining the confidentiality of your credentials (email, password, etc.) and for all activity performed under your account.",
+          "c) You must notify us immediately of any unauthorized access or security breach.",
+          "d) We may suspend or terminate your account if misuse or violation of these Terms occurs."
+        ]
+      },
+
+      "4": {
+        "title": "4. Geolocation and Event Synchronization",
+        "paragraphs": [
+          "a) The service includes detecting presence in the stadium/event via geolocation or other technical methods to synchronize your seat and participation in light mosaics.",
+          "b) You authorize the use of your location or seating position as necessary to enable synchronization within the event.",
+          "c) You agree to use the app safely, respecting the venue’s rules — such as smartphone use, flashlight, and screen brightness.",
+          "d) We do not guarantee that all events support 100% of synchronization features or that technical failures will not occur."
+        ]
+      },
+
+      "5": {
+        "title": "5. Content and User Interactions",
+        "paragraphs": [
+          "a) You may publish photos, videos, comments, or interact with other users through community features.",
+          "b) You are prohibited from posting any content that is illegal, offensive, discriminatory, violates third-party rights, or is sexual, violent, or harmful.",
+          "c) We reserve the right to moderate or remove content that violates these Terms, and to suspend or terminate accounts with repeated violations.",
+          "d) You grant the company a non-exclusive, worldwide, royalty-free license to use, display, reproduce, adapt, or promote any content you publish, as outlined in the Privacy Policy."
+        ]
+      },
+
+      "6": {
+        "title": "6. Intellectual Property",
+        "paragraphs": [
+          "a) All rights related to trademarks, logos, layout, design, text, images, sound, and software belong to Up Connections or its licensors.",
+          "b) You may not copy, modify, distribute, sell, or create derivative works from the app or services without prior written permission.",
+          "c) Any feedback you submit may be used freely by Up Connections without obligation of compensation."
+        ]
+      },
+
+      "7": {
+        "title": "7. Payments, In-App Purchases, and Cancellations",
+        "paragraphs": [
+          "a) If the app includes in-app purchases, subscriptions, or paid features, they are subject to App Store or Google Play policies.",
+          "b) Refunds, cancellations, or plan changes follow the rules of the respective store (Apple or Google).",
+          "c) You are responsible for maintaining a valid payment method."
+        ]
+      },
+
+      "8": {
+        "title": "8. Limitation of Liability and Warranties",
+        "paragraphs": [
+          "a) The app and services are provided “as is” and “as available”. To the fullest extent allowed by law, we make no express or implied warranties about functionality or availability.",
+          "b) Up Connections is not liable for direct or indirect damages, loss of data, or service interruptions resulting from use or inability to use the app.",
+          "c) Live events depend on many external factors (mobile network, stadium coverage, local regulations), and therefore we do not guarantee specific results."
+        ]
+      },
+
+      "9": {
+        "title": "9. Changes to the Terms",
+        "paragraphs": [
+          "a) We may modify these Terms at any time. Updated versions will be published in the app or on our website.",
+          "b) Continued use of the app after changes implies acceptance of the new Terms.",
+          "c) We recommend reviewing these Terms regularly."
+        ]
+      },
+
+      "10": {
+        "title": "10. Termination and Suspension",
+        "paragraphs": [
+          "a) We may suspend, limit, or terminate your account or access to the services if you violate these Terms.",
+          "b) After termination, all rights of access cease and you must stop using the app.",
+          "c) Clauses relating to intellectual property, liability, and other terms that survive termination remain valid."
+        ]
+      },
+
+      "11": {
+        "title": "11. Governing Law and Jurisdiction",
+        "paragraphs": [
+          "These Terms are governed by the laws of the Federative Republic of Brazil. Any dispute shall be resolved exclusively in the courts of the jurisdiction where Up Connections is headquartered, with both parties waiving any other applicable venue."
+        ]
+      },
+
+      "contact": {
+        "text": "If you have any questions about these Terms & Conditions, contact our team at comercial@upconnections-app.com."
+      }
+    }
   }
 }
