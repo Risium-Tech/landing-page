@@ -143,7 +143,8 @@
     "terms": {
       "title": "Legal",
       "privacy": "Privacy Policy",
-      "terms": "Terms & Conditions"
+      "terms": "Terms & Conditions",
+      "cancellation": "Account Cancellation Policy"
     },
     "social": {
       "title": "Social Media"
@@ -375,6 +376,53 @@
       "contact": {
         "text": "If you have any questions about these Terms & Conditions, contact our team at comercial@upconnections-app.com."
       }
+    }
+  },
+  "accountCancellationPolicy": {
+    "title": "Account Cancellation Policy",
+    "intro": "This Account Cancellation Policy explains how you can request the cancellation (deletion) of your Up Connections account, what happens to your data, and what timelines may apply.",
+    "sections": {
+      "1": {
+        "title": "1. How to request cancellation",
+        "paragraphs": [
+          "To request account cancellation, contact our support team and provide enough information for us to identify your account (for example: the email used to register).",
+          "For your security, we may ask for additional verification before processing the request."
+        ]
+      },
+      "2": {
+        "title": "2. Processing timelines",
+        "paragraphs": [
+          "We will start processing your request as soon as possible after verification.",
+          "In some cases, cancellation may take a short period to complete due to technical or legal requirements."
+        ]
+      },
+      "3": {
+        "title": "3. Data and content after cancellation",
+        "paragraphs": [
+          "After cancellation, your access to the app and services will be revoked.",
+          "We may delete or anonymize personal data as required by applicable law. Certain records may be retained when necessary to comply with legal obligations, prevent fraud, or resolve disputes."
+        ]
+      },
+      "4": {
+        "title": "4. Subscriptions and payments",
+        "paragraphs": [
+          "If you have a subscription or in-app purchase, cancellations and refunds are governed by the policies of the store where you subscribed (Apple App Store or Google Play).",
+          "Cancelling your account does not automatically cancel an active subscription in the store."
+        ]
+      },
+      "5": {
+        "title": "5. Reactivation",
+        "paragraphs": [
+          "Once an account is cancelled, reactivation may not be possible. If you decide to return, you may need to create a new account."
+        ]
+      },
+      "contact": {
+        "text": "To request cancellation or ask questions, contact our team via WhatsApp."
+      }
+    },
+    "whatsapp": {
+      "button": "Talk on WhatsApp",
+      "message": "Hello! I would like to request the cancellation of my Up Connections account."
     }
   }
 }

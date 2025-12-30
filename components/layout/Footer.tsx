@@ -110,6 +110,11 @@ export default function Footer() {
               </a>
             </li>
             <li>
+              <a href="/account-cancellation-policy" className="cursor-pointer hover:underline">
+                {t("terms.cancellation")}
+              </a>
+            </li>
+            <li>
               <a href="/privacy-policy" className="cursor-pointer hover:underline">
                 {t("terms.privacy")}
               </a>

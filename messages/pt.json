@@ -143,7 +143,8 @@
     "terms": {
       "title": "Termos",
       "privacy": "Política de Privacidade",
-      "terms": "Termos & Condições"
+      "terms": "Termos & Condições",
+      "cancellation": "Política de Cancelamento de Conta"
     },
     "social": {
       "title": "Social Mídia"
@@ -377,6 +378,53 @@
       "contact": {
         "text": "Em caso de dúvidas sobre estes Termos & Condições, entre em contato com a nossa equipe pelo e-mail comercial@upconnections-app.com."
       }
+    }
+  },
+  "accountCancellationPolicy": {
+    "title": "Política de Cancelamento de Conta",
+    "intro": "Esta Política de Cancelamento de Conta explica como solicitar o cancelamento (exclusão) da sua conta na Up Connections, o que acontece com seus dados e quais prazos podem se aplicar.",
+    "sections": {
+      "1": {
+        "title": "1. Como solicitar o cancelamento",
+        "paragraphs": [
+          "Para solicitar o cancelamento da conta, entre em contato com o nosso suporte e informe dados suficientes para identificarmos sua conta (por exemplo: o e-mail usado no cadastro).",
+          "Por segurança, podemos solicitar uma validação adicional antes de processar o pedido."
+        ]
+      },
+      "2": {
+        "title": "2. Prazos de processamento",
+        "paragraphs": [
+          "Iniciaremos o processamento do seu pedido o mais rápido possível após a verificação.",
+          "Em alguns casos, o cancelamento pode levar um curto período para ser concluído por motivos técnicos ou exigências legais."
+        ]
+      },
+      "3": {
+        "title": "3. Dados e conteúdo após o cancelamento",
+        "paragraphs": [
+          "Após o cancelamento, seu acesso ao aplicativo e aos serviços será encerrado.",
+          "Se aplicável, podemos excluir ou anonimizar dados pessoais conforme a legislação. Alguns registros podem ser mantidos quando necessário para cumprir obrigações legais, prevenir fraudes ou resolver disputas."
+        ]
+      },
+      "4": {
+        "title": "4. Assinaturas e pagamentos",
+        "paragraphs": [
+          "Se você possui assinatura ou compra no app, cancelamentos e reembolsos seguem as políticas da loja onde a assinatura foi feita (App Store ou Google Play).",
+          "O cancelamento da conta não cancela automaticamente uma assinatura ativa na loja."
+        ]
+      },
+      "5": {
+        "title": "5. Reativação",
+        "paragraphs": [
+          "Após o cancelamento, a reativação pode não ser possível. Caso queira voltar, talvez seja necessário criar uma nova conta."
+        ]
+      },
+      "contact": {
+        "text": "Para solicitar o cancelamento ou tirar dúvidas, fale com a nossa equipe pelo WhatsApp."
+      }
+    },
+    "whatsapp": {
+      "button": "Falar no WhatsApp",
+      "message": "Olá! Gostaria de solicitar o cancelamento da minha conta no Up Connections."
     }
   }
 }
