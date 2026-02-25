@@ -169,10 +169,11 @@
         ],
         "footer": "Nunca recolhemos dados sensíveis sem consentimento expresso, nem recolhemos dados em segundo plano sem necessidade."
       },
-
       "2": {
         "title": "2. Como utilizamos os seus dados",
-        "paragraphs": ["Utilizamos as suas informações para:"],
+        "paragraphs": [
+          "Utilizamos as suas informações para:"
+        ],
         "list": [
           "garantir o funcionamento correto da aplicação;",
           "permitir a sincronização de mosaicos luminosos em eventos;",
@@ -185,7 +186,6 @@
         ],
         "footer": "As métricas e estatísticas fornecidas a clubes, organizadores de eventos e parceiros desportivos incluem apenas informações agregadas, como níveis de participação, volume de envolvimento, intensidade dos mosaicos e padrões de utilização. Estes dados não identificam individualmente o utilizador."
       },
-
       "3": {
         "title": "3. Partilha de informações",
         "paragraphs": [
@@ -199,7 +199,6 @@
         ],
         "footer": "Qualquer partilha é realizada em conformidade com a LGPD e demais normas aplicáveis. Nenhum dado pessoal sensível ou identificável é vendido, comercializado ou transferido a terceiros sem o seu consentimento expresso."
       },
-
       "4": {
         "title": "4. Base legal para o tratamento",
         "paragraphs": [
@@ -212,24 +211,23 @@
           "Cumprimento de obrigação legal: quando aplicável."
         ]
       },
-
       "5": {
         "title": "5. Segurança dos dados",
         "paragraphs": [
           "Aplicamos medidas técnicas e organizacionais adequadas para proteger os seus dados contra acessos não autorizados, perda, destruição, uso indevido ou divulgação indevida. Contudo, nenhum sistema digital é totalmente seguro."
         ]
       },
-
       "6": {
         "title": "6. Retenção e eliminação de dados",
         "paragraphs": [
           "Mantemos os seus dados apenas pelo período necessário para cumprir as finalidades desta política. Pode solicitar a eliminação completa da sua conta e dados a qualquer momento através dos nossos canais oficiais."
         ]
       },
-
       "7": {
         "title": "7. Os seus direitos",
-        "paragraphs": ["De acordo com a LGPD, tem o direito de:"],
+        "paragraphs": [
+          "De acordo com a LGPD, tem o direito de:"
+        ],
         "list": [
           "aceder aos seus dados pessoais;",
           "corrigir dados incompletos ou desatualizados;",
@@ -240,28 +238,24 @@
         ],
         "footer": "Para exercer os seus direitos, contacte-nos através dos canais indicados abaixo."
       },
-
       "8": {
         "title": "8. Crianças e adolescentes",
         "paragraphs": [
           "A aplicação não se destina a menores de 13 anos. Não recolhemos intencionalmente dados de crianças nesta faixa etária. Caso haja recolha indevida, os dados serão removidos após notificação."
         ]
       },
-
       "9": {
         "title": "9. Transferência internacional de dados",
         "paragraphs": [
           "Parte dos nossos servidores e parceiros tecnológicos pode estar localizada fora do Brasil. Nesses casos, garantimos que todas as transferências cumpram padrões adequados de proteção de acordo com a LGPD e o GDPR."
         ]
       },
-
       "10": {
         "title": "10. Atualizações desta política",
         "paragraphs": [
           "Podemos atualizar esta Política de Privacidade periodicamente. Alterações relevantes serão comunicadas através da aplicação ou dos nossos canais oficiais."
         ]
       },
-
       "11": {
         "title": "11. Contacto",
         "paragraphs": [
@@ -283,7 +277,6 @@
           "Evento refere-se ao evento desportivo ou local onde a aplicação é utilizada e no qual ocorrem mosaicos ou interações."
         ]
       },
-
       "2": {
         "title": "2. Utilização da Aplicação e Serviços",
         "paragraphs": [
@@ -292,7 +285,6 @@
           "c) Não poderá utilizar a aplicação de forma que prejudique a experiência de outros utilizadores ou do evento, incluindo interferência com o sistema de sincronização de mosaicos ou geolocalização."
         ]
       },
-
       "3": {
         "title": "3. Conta de Utilizador, Credenciais e Responsabilidades",
         "paragraphs": [
@@ -302,7 +294,6 @@
           "d) Podemos suspender ou encerrar a conta do utilizador caso seja identificado uso indevido ou violação destes Termos."
         ]
       },
-
       "4": {
         "title": "4. Geolocalização e Sincronização em Eventos",
         "paragraphs": [
@@ -312,7 +303,6 @@
           "d) Não garantimos que todos os eventos suportem a funcionalidade de sincronização na totalidade ou que não ocorram falhas técnicas."
         ]
       },
-
       "5": {
         "title": "5. Conteúdo e Interações entre Utilizadores",
         "paragraphs": [
@@ -322,7 +312,6 @@
           "d) O utilizador concede à empresa uma licença não exclusiva, mundial e sem royalties para utilizar, exibir, reproduzir, adaptar ou promover o conteúdo que publica, conforme indicado na Política de Privacidade."
         ]
       },
-
       "6": {
         "title": "6. Propriedade Intelectual",
         "paragraphs": [
@@ -331,7 +320,6 @@
           "c) Qualquer feedback enviado pode ser utilizado pela Up Connections livremente, sem qualquer obrigação de compensação."
         ]
       },
-
       "7": {
         "title": "7. Pagamentos, Compras Integradas e Cancelamentos",
         "paragraphs": [
@@ -340,7 +328,6 @@
           "c) O utilizador é responsável por manter um método de pagamento válido."
         ]
       },
-
       "8": {
         "title": "8. Limitação de Responsabilidade e Garantias",
         "paragraphs": [
@@ -349,7 +336,6 @@
           "c) Eventos ao vivo dependem de fatores externos (rede móvel, cobertura, regulamentos do estádio), e não garantimos resultados específicos."
         ]
       },
-
       "9": {
         "title": "9. Alterações aos Termos",
         "paragraphs": [
@@ -358,7 +344,6 @@
           "c) Recomendamos a revisão periódica deste documento."
         ]
       },
-
       "10": {
         "title": "10. Encerramento e Suspensão",
         "paragraphs": [
@@ -367,14 +352,12 @@
           "c) Cláusulas como propriedade intelectual e limitação de responsabilidade permanecem válidas mesmo após o encerramento."
         ]
       },
-
       "11": {
         "title": "11. Legislação Aplicável e Foro",
         "paragraphs": [
           "Estes Termos são regidos pelas leis da República Federativa do Brasil. Qualquer litígio será resolvido no foro da comarca onde estiver sediada a Up Connections, com renúncia de qualquer outro foro possível."
         ]
       },
-
       "contact": {
         "text": "Em caso de dúvidas sobre estes Termos & Condições, contacte a nossa equipa através do email comercial@upconnections-app.com."
       }
@@ -421,6 +404,34 @@
       "contact": {
         "text": "Para solicitar o cancelamento ou esclarecer dúvidas, fale com a nossa equipa pelo WhatsApp."
       }
+    },
+    "form": {
+      "title": "Formulário de cancelamento de conta",
+      "description": "Preencha os dados abaixo para solicitar o cancelamento definitivo da sua conta.",
+      "fields": {
+        "fullName": "Nome completo",
+        "accountEmail": "E-mail da conta",
+        "birthDate": "Data de nascimento",
+        "phone": "Telefone para contacto (opcional)",
+        "country": "País de residência",
+        "reason": "Motivo do cancelamento",
+        "reasonPlaceholder": "Selecione um motivo",
+        "details": "Detalhes adicionais",
+        "confirmOwnership": "Confirmo que sou titular desta conta e autorizo o cancelamento.",
+        "confirmDataLoss": "Estou ciente de que o meu acesso e os meus dados podem ser removidos conforme esta política.",
+        "confirmExtraValidation": "Estou ciente de que o processo de cancelamento poderá prosseguir por e-mail ou WhatsApp e que, para além destes dados, poderão ser solicitados documentos para comprovar a titularidade da conta.",
+        "username": "Nome de utilizador da conta"
+      },
+      "reasons": {
+        "privacy": "Privacidade e proteção de dados",
+        "notUsing": "Já não utilizo a app",
+        "newAccount": "Quero criar uma nova conta",
+        "technicalIssues": "Problemas técnicos",
+        "other": "Outro motivo"
+      },
+      "submit": "Enviar pedido de cancelamento",
+      "disclaimer": "Ao submeter, a sua app de e-mail será aberta para concluir o envio do pedido.",
+      "support": "Se precisar de ajuda adicional, contacte comercial@upconnections-app.com."
     },
     "whatsapp": {
       "button": "Falar no WhatsApp",

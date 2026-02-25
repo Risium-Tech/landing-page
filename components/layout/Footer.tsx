@@ -25,6 +25,7 @@ export default function Footer() {
             type="email"
             placeholder={t("newsletter.placeholder")}
             className="flex-1 px-4 py-3 text-black outline-none"
+            suppressHydrationWarning
           />
           <button
             type="submit"
