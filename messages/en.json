@@ -169,10 +169,11 @@
         ],
         "footer": "We never collect sensitive data without explicit consent and do not collect background data without necessity."
       },
-
       "2": {
         "title": "2. How We Use Your Data",
-        "paragraphs": ["We use your information to:"],
+        "paragraphs": [
+          "We use your information to:"
+        ],
         "list": [
           "ensure the proper functioning of the app;",
           "enable synchronization of light mosaics during events;",
@@ -185,7 +186,6 @@
         ],
         "footer": "Metrics and statistics generated for clubs, event organizers, and sports partners include only aggregated information such as participation levels, engagement volume, mosaic intensity, and usage patterns. These data do not personally identify users."
       },
-
       "3": {
         "title": "3. Information Sharing",
         "paragraphs": [
@@ -199,10 +199,11 @@
         ],
         "footer": "All data sharing complies with the LGPD and other applicable laws. No sensitive or identifiable personal data is sold, commercialized, or transferred to third parties without your explicit consent."
       },
-
       "4": {
         "title": "4. Legal Basis for Processing",
-        "paragraphs": ["We process your data based on the following legal grounds under the LGPD:"],
+        "paragraphs": [
+          "We process your data based on the following legal grounds under the LGPD:"
+        ],
         "list": [
           "Consent: geolocation and notifications.",
           "Performance of a contract: to provide the core functionality of the app.",
@@ -210,24 +211,23 @@
           "Compliance with legal obligations: when required."
         ]
       },
-
       "5": {
         "title": "5. Data Security",
         "paragraphs": [
           "We apply appropriate technical and organizational measures to protect your data from unauthorized access, loss, destruction, misuse, or improper disclosure. However, no digital system is 100% secure."
         ]
       },
-
       "6": {
         "title": "6. Data Retention and Deletion",
         "paragraphs": [
           "We keep your data only for as long as necessary to fulfill the purposes outlined in this policy. You may request complete deletion of your account and data at any time through our official channels."
         ]
       },
-
       "7": {
         "title": "7. Your Rights",
-        "paragraphs": ["Under the LGPD, you have the right to:"],
+        "paragraphs": [
+          "Under the LGPD, you have the right to:"
+        ],
         "list": [
           "access your personal data;",
           "correct incomplete or outdated data;",
@@ -238,28 +238,24 @@
         ],
         "footer": "To exercise your rights, please contact us using the channels listed below."
       },
-
       "8": {
         "title": "8. Children and Adolescents",
         "paragraphs": [
           "The app is not intended for children under 13. We do not knowingly collect data from minors in this age group. If such data is collected unintentionally, it will be promptly removed after notification."
         ]
       },
-
       "9": {
         "title": "9. International Data Transfers",
         "paragraphs": [
           "Some of our servers and technology partners may be located outside Brazil. In such cases, we ensure that all transfers comply with appropriate protection standards under LGPD and GDPR."
         ]
       },
-
       "10": {
         "title": "10. Policy Updates",
         "paragraphs": [
           "We may update this Privacy Policy periodically. Relevant changes will be communicated through the app or our official channels."
         ]
       },
-
       "11": {
         "title": "11. Contact",
         "paragraphs": [
@@ -281,7 +277,6 @@
           "Event: the sports event or venue where the app is used and where mosaics or interactions take place."
         ]
       },
-
       "2": {
         "title": "2. Use of the App and Services",
         "paragraphs": [
@@ -290,7 +285,6 @@
           "c) You may not use the app in a way that negatively affects the experience of other users or the event, including interfering with the mosaic synchronization system or geolocation."
         ]
       },
-
       "3": {
         "title": "3. User Account, Credentials, and Responsibilities",
         "paragraphs": [
@@ -300,7 +294,6 @@
           "d) We may suspend or terminate your account if misuse or violation of these Terms occurs."
         ]
       },
-
       "4": {
         "title": "4. Geolocation and Event Synchronization",
         "paragraphs": [
@@ -310,7 +303,6 @@
           "d) We do not guarantee that all events support 100% of synchronization features or that technical failures will not occur."
         ]
       },
-
       "5": {
         "title": "5. Content and User Interactions",
         "paragraphs": [
@@ -320,7 +312,6 @@
           "d) You grant the company a non-exclusive, worldwide, royalty-free license to use, display, reproduce, adapt, or promote any content you publish, as outlined in the Privacy Policy."
         ]
       },
-
       "6": {
         "title": "6. Intellectual Property",
         "paragraphs": [
@@ -329,7 +320,6 @@
           "c) Any feedback you submit may be used freely by Up Connections without obligation of compensation."
         ]
       },
-
       "7": {
         "title": "7. Payments, In-App Purchases, and Cancellations",
         "paragraphs": [
@@ -338,7 +328,6 @@
           "c) You are responsible for maintaining a valid payment method."
         ]
       },
-
       "8": {
         "title": "8. Limitation of Liability and Warranties",
         "paragraphs": [
@@ -347,7 +336,6 @@
           "c) Live events depend on many external factors (mobile network, stadium coverage, local regulations), and therefore we do not guarantee specific results."
         ]
       },
-
       "9": {
         "title": "9. Changes to the Terms",
         "paragraphs": [
@@ -356,7 +344,6 @@
           "c) We recommend reviewing these Terms regularly."
         ]
       },
-
       "10": {
         "title": "10. Termination and Suspension",
         "paragraphs": [
@@ -365,14 +352,12 @@
           "c) Clauses relating to intellectual property, liability, and other terms that survive termination remain valid."
         ]
       },
-
       "11": {
         "title": "11. Governing Law and Jurisdiction",
         "paragraphs": [
           "These Terms are governed by the laws of the Federative Republic of Brazil. Any dispute shall be resolved exclusively in the courts of the jurisdiction where Up Connections is headquartered, with both parties waiving any other applicable venue."
         ]
       },
-
       "contact": {
         "text": "If you have any questions about these Terms & Conditions, contact our team at comercial@upconnections-app.com."
       }
@@ -419,6 +404,34 @@
       "contact": {
         "text": "To request cancellation or ask questions, contact our team via WhatsApp."
       }
+    },
+    "form": {
+      "title": "Account cancellation form",
+      "description": "Fill in the details below to request the permanent cancellation of your account.",
+      "fields": {
+        "fullName": "Full name",
+        "accountEmail": "Account email",
+        "birthDate": "Date of birth",
+        "phone": "Contact phone (optional)",
+        "country": "Country of residence",
+        "reason": "Cancellation reason",
+        "reasonPlaceholder": "Select a reason",
+        "details": "Additional details",
+        "confirmOwnership": "I confirm that I own this account and authorize its cancellation.",
+        "confirmDataLoss": "I understand my access and data may be removed according to this policy.",
+        "confirmExtraValidation": "I understand the cancellation process may continue by email or WhatsApp and that, in addition to this data, documents may be requested to verify account ownership.",
+        "username": "Account username"
+      },
+      "reasons": {
+        "privacy": "Privacy and data protection",
+        "notUsing": "I no longer use the app",
+        "newAccount": "I want to create a new account",
+        "technicalIssues": "Technical issues",
+        "other": "Other reason"
+      },
+      "submit": "Submit cancellation request",
+      "disclaimer": "When you submit, your email app will open so you can complete sending the request.",
+      "support": "If you need additional help, contact comercial@upconnections-app.com."
     },
     "whatsapp": {
       "button": "Talk on WhatsApp",
