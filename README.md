@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Up Mosaicos — Landing Page
 
-## Getting Started
+Landing page institucional do Up Mosaicos com internacionalização, animações e design responsivo.
 
-First, run the development server:
+## Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 15** com App Router
+- **React 19**
+- **TypeScript**
+- **Tailwind CSS 4**
+- **next-intl** para internacionalização (pt-BR, en)
+- **Framer Motion** para animações de entrada
+- **Lenis** para smooth scrolling
+- **Keen Slider** para carrossel de depoimentos
+- **Heroicons** para ícones
+- **Docker** com build multi-stage (Node Alpine)
+
+## Estrutura
+
+```
+├── app/
+│   └── [locale]/                      # Roteamento dinâmico por idioma
+│       ├── page.tsx                   # Página principal
+│       ├── privacy-policy/            # Política de privacidade
+│       ├── terms-conditions/          # Termos de uso
+│       ├── account-cancellation-policy/ # Política de cancelamento
+│       └── layout.tsx
+├── components/
+│   ├── layout/
+│   │   ├── Header.tsx                 # Navegação com troca de idioma
+│   │   └── Footer.tsx
+│   ├── sections/
+│   │   ├── HeroBanner/               # Banner principal com CTA
+│   │   ├── About/                     # Sobre o projeto
+│   │   ├── HowWorks/                 # Como funciona (step cards)
+│   │   ├── Benefits/                  # Benefícios
+│   │   ├── Feedback/                  # Depoimentos (carrossel)
+│   │   ├── DownloadBanner/           # Banner de download
+│   │   └── InspirationText/          # Texto inspiracional
+│   ├── ui/                            # GradientButton, FeedbackCard, StepCard
+│   └── providers/
+│       └── LenisProvider.tsx          # Provider de smooth scrolling
+├── i18n/                              # Configuração next-intl
+├── messages/                          # Arquivos de tradução
+├── middleware.ts                      # Middleware de internacionalização
+└── public/                            # Assets estáticos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Seções da Página
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Hero Banner** — banner full-viewport com background e CTA de download
+2. **About** — sobre a plataforma
+3. **How Works** — cards com etapas de uso
+4. **Benefits** — vantagens para fãs e organizadores
+5. **Inspiration Text** — frase de impacto
+6. **Feedback** — carrossel de depoimentos (Keen Slider)
+7. **Download Banner** — links para App Store e Google Play
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Navegação por âncoras com smooth scroll: `#home`, `#about`, `#how`, `#benefits`, `#feedbacks`
 
-## Learn More
+## Instalação
 
-To learn more about Next.js, take a look at the following resources:
+### Pré-requisitos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Node.js 18+
+- Yarn
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Desenvolvimento local
 
-## Deploy on Vercel
+```bash
+# Instalar dependências
+yarn install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Rodar em desenvolvimento
+yarn dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Docker
+
+```bash
+docker build -t mosaic-landing .
+docker run -p 3000:3000 mosaic-landing
+```
+
+---
+
+Desenvolvido por **JaoDev**
