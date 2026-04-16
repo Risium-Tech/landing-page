@@ -2,15 +2,35 @@
 
 import { useTranslations } from "next-intl";
 import SquareCard from "@/components/ui/SquareCard";
-import GradientButton from "@/components/ui/GradientButton";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.css";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
+const APPLE_STORE_URL = "https://apps.apple.com/br/app/up-mosaicos/id6757821931";
+const PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.upconnections.mosaics&hl=en";
+
+function getStoreUrlByDevice() {
+  if (typeof window === "undefined") return PLAY_STORE_URL;
+
+  const userAgent = window.navigator.userAgent || "";
+  const platform = window.navigator.platform || "";
+
+  const isIOS =
+    /iPhone|iPad|iPod/i.test(userAgent) ||
+    (platform === "MacIntel" && window.navigator.maxTouchPoints > 1);
+
+  const isAndroid = /Android/i.test(userAgent);
+
+  if (isIOS) return APPLE_STORE_URL;
+  if (isAndroid) return PLAY_STORE_URL;
+
+  return PLAY_STORE_URL;
+}
+
 export default function Benefits() {
   const t = useTranslations("HomePage.benefits");
-
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
@@ -20,8 +40,13 @@ export default function Benefits() {
     return () => window.removeEventListener("resize", check);
   }, []);
 
+  const handleInstallClick = () => {
+    window.location.href = getStoreUrlByDevice();
+  };
+
   const autoplay = (slider: any) => {
     if (window.innerWidth >= 768) return;
+
     let timeout: any;
     let mouseOver = false;
 
@@ -32,6 +57,7 @@ export default function Benefits() {
     function nextTimeout() {
       clearTimeout(timeout);
       if (mouseOver) return;
+
       timeout = setTimeout(() => {
         slider.next();
       }, 2000);
@@ -42,10 +68,12 @@ export default function Benefits() {
         mouseOver = true;
         clearNextTimeout();
       });
+
       slider.container.addEventListener("mouseout", () => {
         mouseOver = false;
         nextTimeout();
       });
+
       nextTimeout();
     });
 
@@ -104,7 +132,6 @@ export default function Benefits() {
   return (
     <section className="w-full bg-white bg-[url('/svg/bg-vector.svg')] py-30 text-black">
       <div className="mx-auto flex w-full flex-col items-center justify-center gap-20">
-        {/* Cabeçalho */}
         <motion.div
           className="space-y-4 text-center"
           initial={{ opacity: 0, y: 40 }}
@@ -115,10 +142,10 @@ export default function Benefits() {
           <h2 className="text-3xl font-extrabold md:text-3xl lg:text-6xl">
             <span className="border-yellow-normal inline-block border-b-4 pb-1">{t("title")}</span>
           </h2>
+
           <p className="text-3xl">{t("subtitle")}</p>
         </motion.div>
 
-        {/* Grid no desktop / Slider no mobile */}
         <div className="container px-4">
           <div
             ref={sliderRef}
@@ -155,14 +182,19 @@ export default function Benefits() {
           </div>
         </div>
 
-        {/* Botão CTA */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
           viewport={{ once: true }}
         >
-          <GradientButton href="/download">{t("cta")}</GradientButton>
+          <button
+            type="button"
+            onClick={handleInstallClick}
+            className="inline-flex items-center justify-center rounded-full bg-[image:var(--gradient-blue-green)] px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+          >
+            {t("cta")}
+          </button>
         </motion.div>
       </div>
     </section>
