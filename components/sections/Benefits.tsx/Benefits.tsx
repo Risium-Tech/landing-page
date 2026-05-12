@@ -6,31 +6,11 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.css";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-
-const APPLE_STORE_URL = "https://apps.apple.com/br/app/up-mosaicos/id6757821931";
-const PLAY_STORE_URL =
-  "https://play.google.com/store/apps/details?id=com.upconnections.mosaics&hl=en";
-
-function getStoreUrlByDevice() {
-  if (typeof window === "undefined") return PLAY_STORE_URL;
-
-  const userAgent = window.navigator.userAgent || "";
-  const platform = window.navigator.platform || "";
-
-  const isIOS =
-    /iPhone|iPad|iPod/i.test(userAgent) ||
-    (platform === "MacIntel" && window.navigator.maxTouchPoints > 1);
-
-  const isAndroid = /Android/i.test(userAgent);
-
-  if (isIOS) return APPLE_STORE_URL;
-  if (isAndroid) return PLAY_STORE_URL;
-
-  return PLAY_STORE_URL;
-}
+import { useLocale } from "next-intl";
 
 export default function Benefits() {
   const t = useTranslations("HomePage.benefits");
+  const locale = useLocale();
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
@@ -41,7 +21,7 @@ export default function Benefits() {
   }, []);
 
   const handleInstallClick = () => {
-    window.location.href = getStoreUrlByDevice();
+    window.location.href = `/${locale}/identify-os`;
   };
 
   const autoplay = (slider: any) => {

@@ -24,39 +24,16 @@ const languages = [
   { code: "es", flag: "https://flagcdn.com/es.svg", label: "Español" },
 ];
 
-const APPLE_STORE_URL = "https://apps.apple.com/br/app/up-mosaicos/id6757821931";
-const PLAY_STORE_URL =
-  "https://play.google.com/store/apps/details?id=com.upconnections.mosaics&hl=en";
-
-function getStoreUrlByDevice() {
-  if (typeof window === "undefined") return PLAY_STORE_URL;
-
-  const userAgent = window.navigator.userAgent || window.navigator.vendor || "";
-  const platform = window.navigator.platform || "";
-
-  const isIOS =
-    /iPhone|iPad|iPod/i.test(userAgent) ||
-    (platform === "MacIntel" && window.navigator.maxTouchPoints > 1);
-
-  const isAndroid = /Android/i.test(userAgent);
-
-  if (isIOS) return APPLE_STORE_URL;
-  if (isAndroid) return PLAY_STORE_URL;
-
-  // fallback para desktop/outros sistemas
-  return PLAY_STORE_URL;
-}
-
 type InstallButtonProps = {
   children: React.ReactNode;
   className?: string;
   onClick?: () => void;
+  locale: string;
 };
 
-function InstallButton({ children, className = "", onClick }: InstallButtonProps) {
+function InstallButton({ children, className = "", locale, onClick }: InstallButtonProps) {
   const handleClick = () => {
-    const targetUrl = getStoreUrlByDevice();
-    window.location.href = targetUrl;
+    window.location.href = `/${locale}/identify-os`;
     onClick?.();
   };
 
@@ -165,7 +142,7 @@ export default function Header() {
           </div>
 
           <div className="hidden lg:block">
-            <InstallButton>{t("download")}</InstallButton>
+            <InstallButton locale={locale}>{t("download")}</InstallButton>
           </div>
 
           <button
@@ -194,7 +171,11 @@ export default function Header() {
             </button>
           ))}
 
-          <InstallButton className="w-full text-center" onClick={() => setIsOpen(false)}>
+          <InstallButton
+            className="w-full text-center"
+            locale={locale}
+            onClick={() => setIsOpen(false)}
+          >
             {t("download")}
           </InstallButton>
         </nav>

@@ -3,36 +3,14 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-const APPLE_STORE_URL = "https://apps.apple.com/br/app/up-mosaicos/id6757821931";
-const PLAY_STORE_URL =
-  "https://play.google.com/store/apps/details?id=com.upconnections.mosaics&hl=en";
-
-function getStoreUrlByDevice() {
-  if (typeof window === "undefined") return PLAY_STORE_URL;
-
-  const userAgent = window.navigator.userAgent || window.navigator.vendor || "";
-  const platform = window.navigator.platform || "";
-
-  const isIOS =
-    /iPhone|iPad|iPod/i.test(userAgent) ||
-    (platform === "MacIntel" && window.navigator.maxTouchPoints > 1);
-
-  const isAndroid = /Android/i.test(userAgent);
-
-  if (isIOS) return APPLE_STORE_URL;
-  if (isAndroid) return PLAY_STORE_URL;
-
-  // fallback desktop
-  return PLAY_STORE_URL;
-}
+import { useLocale } from "next-intl";
 
 export default function DownloadBanner() {
   const t = useTranslations("HomePage.download");
+  const locale = useLocale();
 
   const handleInstallClick = () => {
-    const targetUrl = getStoreUrlByDevice();
-    window.location.href = targetUrl;
+    window.location.href = `/${locale}/identify-os`;
   };
 
   return (
