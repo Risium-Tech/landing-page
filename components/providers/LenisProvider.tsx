@@ -1,27 +1,56 @@
 "use client";
 
-import Lenis from "lenis";
 import { useEffect } from "react";
 
 export function LenisProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smoothWheel: true,
-    });
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const desktop = window.matchMedia("(min-width: 768px)");
 
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
+    if (reducedMotion.matches || !desktop.matches) {
+      return;
     }
 
-    requestAnimationFrame(raf);
+    let frameId = 0;
+    let lenis: { raf: (time: number) => void; destroy: () => void } | null = null;
+    let disposed = false;
 
-    (window as any).lenis = lenis; // opcional, útil para scrollTo()
+    function raf(time: number) {
+      lenis?.raf(time);
+      frameId = requestAnimationFrame(raf);
+    }
+
+    import("lenis").then(({ default: Lenis }) => {
+      if (disposed) {
+        return;
+      }
+
+      lenis = new Lenis({
+        duration: 0.9,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smoothWheel: true,
+      });
+
+      frameId = requestAnimationFrame(raf);
+      (window as any).lenis = lenis;
+    });
+
+    const handleVisibilityChange = () => {
+      cancelAnimationFrame(frameId);
+
+      if (!document.hidden) {
+        frameId = requestAnimationFrame(raf);
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
 
     return () => {
-      lenis.destroy();
+      disposed = true;
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      cancelAnimationFrame(frameId);
+      lenis?.destroy();
+      delete (window as any).lenis;
     };
   }, []);
 

@@ -11,21 +11,21 @@
   },
   "HomePage": {
     "seo": {
-      "title": "Bem-vindo ao Up Connections",
-      "description": "A ligar ideias e pessoas para soluções reais"
+      "title": "Up Connections | Experi?ncias de luz sincronizadas",
+      "description": "Plataforma de sincroniza??o ao vivo para criar mosaicos interativos, experi?ncias de luz e envolvimento coletivo em grandes eventos."
     },
-    "title": "Bem-vindo ao Up Connections",
-    "description": "A ligar ideias e pessoas para soluções reais",
+    "title": "Up Connections",
+    "description": "A ligar pessoas pela luz em experi?ncias ao vivo.",
     "hero": {
-      "title": "TRANSFORME A EXPERIÊNCIA NO ESTÁDIO:",
-      "subtitle": "sinta a emoção dos adeptos como nunca antes.",
-      "cta": "DESCOBRIR AGORA",
-      "call": "Participe em eventos desportivos de forma única: escolha o seu lugar, faça parte de mosaicos coletivos e interaja com outros adeptos."
+      "title": "TRANSFORME MILHARES DE TELEM?VEIS NUM ESPET?CULO VIVO",
+      "subtitle": "Crie experi?ncias de luz sincronizadas, mosaicos interativos e momentos inesquec?veis em tempo real.",
+      "cta": "Explorar a experi?ncia",
+      "call": "O p?blico deixa de apenas assistir ao evento e passa a fazer parte dele."
     },
     "about": {
       "title": "SOBRE A APP:",
-      "text": "O Up é uma plataforma pioneira que organiza e potencia a experiência dos adeptos dentro do estádio. Mais do que assistir ao jogo, cada adepto torna-se parte de uma obra coletiva: mosaicos que ganham vida com a luz da lanterna ou do ecrã do telemóvel, tudo sincronizado em tempo real.",
-      "imageAlt": "Adepto no estádio com mosaico"
+      "text": "O Up é uma plataforma pioneira que organiza e potencia a experiência dos participantes dentro do estádio. Mais do que assistir ao jogo, cada participante torna-se parte de uma obra coletiva: mosaicos que ganham vida com a luz da lanterna ou do ecrã do telemóvel, tudo sincronizado em tempo real.",
+      "imageAlt": "Participante no estádio com mosaico"
     },
     "how": {
       "title": "COMO FUNCIONA:",
@@ -34,7 +34,7 @@
         "step1": {
           "title": "1. Detetamos a sua presença no estádio",
           "description": "A geolocalização confirma onde está sentado.",
-          "alt": "Ícone de jogador de futebol"
+          "alt": "Ícone de participante"
         },
         "step2": {
           "title": "2. Sincronizamos a sua posição com o mosaico",
@@ -43,7 +43,7 @@
         },
         "step3": {
           "title": "3. A bancada torna-se um espetáculo",
-          "description": "Cada adepto contribui para formar o desenho, nome da equipa ou mensagem coletiva.",
+          "description": "Cada participante contribui para formar o desenho, nome da equipa ou mensagem coletiva.",
           "alt": "Ícone de estrelas em celebração"
         }
       }
@@ -59,7 +59,7 @@
         },
         "card2": {
           "title": "Tecnologia de geolocalização",
-          "description": "Cada adepto é identificado no seu lugar e faz parte do espetáculo.",
+          "description": "Cada participante é identificado no seu lugar e faz parte do espetáculo.",
           "alt": "Ícone de geolocalização no estádio"
         },
         "card3": {
@@ -74,15 +74,15 @@
         },
         "card5": {
           "title": "Inovação e espírito pioneiro",
-          "description": "Primeira solução a unir experiência coletiva, redes sociais e dados de adeptos numa só plataforma.",
+          "description": "Primeira solução a unir experiência coletiva, redes sociais e dados de participantes numa só plataforma.",
           "alt": "Ícone de inovação"
         }
       },
       "cta": "Descarregar Agora"
     },
     "inspiration": {
-      "text": "MILHARES DE VOZES, UMA SÓ LUZ: A FORÇA DOS ADEPTOS UNIDOS.",
-      "alt": "Ícone de bola de futebol"
+      "text": "MILHARES DE ECR?S, UMA S? LUZ: A FOR?A DE UM P?BLICO LIGADO.",
+      "alt": "?cone de luz coletiva"
     },
     "feedbacks": {
       "backgroundAlt": "Fundo do estádio",
@@ -91,16 +91,16 @@
       "cards": {
         "card1": {
           "name": "Lucas Andrade",
-          "role": "Adepto Apaixonado",
+          "role": "Participante Apaixonado",
           "feedback": "Nunca pensei que o meu telemóvel pudesse fazer parte da festa no estádio. Quando vi o mosaico a ganhar forma, senti que fazia parte de algo maior. Foi emocionante participar nesta experiência coletiva.",
-          "altAvatar": "Foto do adepto Lucas Andrade",
+          "altAvatar": "Foto do participante Lucas Andrade",
           "quoteBgAlt": "Fundo estilizado de aspas",
           "quoteIconAlt": "Ícone de aspas decorativo"
         },
         "card2": {
           "name": "Mariana Costa",
           "role": "Gestora de Marketing Desportivo",
-          "feedback": "O Up trouxe inovação e emoção ao nosso jogo. Conseguimos envolver milhares de adeptos de uma forma única, sem complicações logísticas e com um impacto visual impressionante.",
+          "feedback": "O Up trouxe inovação e emoção ao nosso jogo. Conseguimos envolver milhares de participantes de uma forma única, sem complicações logísticas e com um impacto visual impressionante.",
           "altAvatar": "Foto da adepta Mariana Costa",
           "quoteBgAlt": "Fundo estilizado de aspas",
           "quoteIconAlt": "Ícone de aspas decorativo"
@@ -108,18 +108,18 @@
         "card3": {
           "name": "Ricardo Menezes",
           "role": "Diretor de Marketing de Marca Parceira",
-          "feedback": "Com o Up conseguimos ligar a nossa marca diretamente à emoção dos adeptos. O alcance e a recordação da marca foram muito superiores a qualquer ação tradicional que já tínhamos feito no estádio.",
-          "altAvatar": "Foto do adepto Ricardo Menezes",
+          "feedback": "Com o Up conseguimos ligar a nossa marca diretamente à emoção dos participantes. O alcance e a recordação da marca foram muito superiores a qualquer ação tradicional que já tínhamos feito no estádio.",
+          "altAvatar": "Foto do participante Ricardo Menezes",
           "quoteBgAlt": "Fundo estilizado de aspas",
           "quoteIconAlt": "Ícone de aspas decorativo"
         }
       }
     },
     "download": {
-      "title": "PRONTO PARA VIVER A EMOÇÃO DOS ADEPTOS DE UMA NOVA FORMA?",
-      "subtitle": "Imagine milhares de adeptos a transformar o estádio num mosaico vivo, todos ligados pela mesma app. Esta é a revolução que estamos a trazer.",
-      "googlePlayAlt": "Disponível no Google Play",
-      "appStoreAlt": "Disponível na App Store"
+      "title": "PRONTO PARA CRIAR UMA EXPERI?NCIA AO VIVO INESQUEC?VEL?",
+      "subtitle": "Imagine milhares de pessoas a transformar os seus telem?veis num mosaico vivo, todas ligadas pela mesma plataforma.",
+      "googlePlayAlt": "Dispon?vel no Google Play",
+      "appStoreAlt": "Dispon?vel na App Store"
     }
   },
   "Footer": {
@@ -149,7 +149,7 @@
     "social": {
       "title": "Redes Sociais"
     },
-    "rights": "A ligar Adeptos, A Criar Memórias. – Todos os direitos reservados."
+    "rights": "A ligar pessoas, a criar mem?rias. Todos os direitos reservados."
   },
   "privacyPolicy": {
     "title": "Política de Privacidade",
@@ -184,7 +184,7 @@
           "comunicar notificações importantes relacionadas com a aplicação;",
           "responder a pedidos de suporte, contacto e exercício de direitos."
         ],
-        "footer": "As métricas e estatísticas fornecidas a clubes, organizadores de eventos e parceiros desportivos incluem apenas informações agregadas, como níveis de participação, volume de envolvimento, intensidade dos mosaicos e padrões de utilização. Estes dados não identificam individualmente o utilizador."
+        "footer": "As métricas e estatísticas fornecidas a clubes, organizadores de eventos e parceiros ao vivo incluem apenas informações agregadas, como níveis de participação, volume de envolvimento, intensidade dos mosaicos e padrões de utilização. Estes dados não identificam individualmente o utilizador."
       },
       "3": {
         "title": "3. Partilha de informações",
@@ -193,7 +193,7 @@
         ],
         "list": [
           "Parceiros tecnológicos: empresas responsáveis por infraestrutura, alojamento, processamento de dados e ferramentas analíticas.",
-          "Clubes, organizadores de eventos e parceiros desportivos: recebem métricas agregadas sobre participação, envolvimento em mosaicos e padrões de utilização, sempre sem dados pessoais.",
+          "Clubes, organizadores de eventos e parceiros ao vivo: recebem métricas agregadas sobre participação, envolvimento em mosaicos e padrões de utilização, sempre sem dados pessoais.",
           "Parceiros comerciais: análises e insights anonimizados para estudos, melhorias e pesquisas estatísticas.",
           "Autoridades legais: mediante ordem judicial, investigação ou obrigação legal aplicável."
         ],
@@ -272,7 +272,7 @@
         "title": "1. Definições",
         "paragraphs": [
           "Aplicação refere-se ao software móvel Up Connections, disponível para download na App Store e Google Play.",
-          "Serviços referem-se às funcionalidades disponibilizadas pela aplicação — como deteção de assento no estádio, sincronização de mosaicos luminosos, rede social de adeptos, partilha de fotos/vídeos, interações e outros recursos.",
+          "Serviços referem-se às funcionalidades disponibilizadas pela aplicação — como deteção de assento no estádio, sincronização de mosaicos luminosos, rede social de participantes, partilha de fotos/vídeos, interações e outros recursos.",
           "Conta refere-se ao perfil de utilizador criado para aceder aos serviços.",
           "Evento refere-se ao evento desportivo ou local onde a aplicação é utilizada e no qual ocorrem mosaicos ou interações."
         ]
@@ -280,7 +280,7 @@
       "2": {
         "title": "2. Utilização da Aplicação e Serviços",
         "paragraphs": [
-          "a) A aplicação destina-se a adeptos e participantes de eventos desportivos que pretendam participar em experiências interativas (como mosaicos luminosos) e utilizar funcionalidades da comunidade.",
+          "a) A aplicação destina-se a participantes e participantes de eventos ao vivo que pretendam participar em experiências interativas (como mosaicos luminosos) e utilizar funcionalidades da comunidade.",
           "b) Compromete-se a utilizar a aplicação e os serviços de forma lícita, respeitando a legislação aplicável, os regulamentos do estádio/evento, as nossas diretrizes de comunidade e os presentes Termos.",
           "c) Não poderá utilizar a aplicação de forma que prejudique a experiência de outros utilizadores ou do evento, incluindo interferência com o sistema de sincronização de mosaicos ou geolocalização."
         ]

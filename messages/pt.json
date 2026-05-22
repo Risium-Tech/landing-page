@@ -1,123 +1,123 @@
 {
   "Header": {
     "home": "Home",
-    "about": "Sobre",
-    "how": "Como Funciona",
-    "benefits": "Benefícios",
-    "feedbacks": "Feedbacks",
+    "about": "Experiências",
+    "how": "Tecnologia",
+    "benefits": "Soluções",
+    "feedbacks": "Marcas",
     "contact": "Contato",
-    "download": "Baixar Agora",
+    "download": "Baixar app",
     "language": "Idioma"
   },
   "HomePage": {
     "seo": {
-      "title": "Bem-vindo ao Up Connections",
-      "description": "Conectando ideias e pessoas para soluções reais"
+      "title": "Up Connections | Experiências de luz sincronizadas",
+      "description": "Plataforma de sincronização ao vivo para criar mosaicos interativos, experiências de luz e engajamento coletivo em grandes eventos."
     },
-    "title": "Bem-vindo ao Up Connections",
-    "description": "Conectando ideias e pessoas para soluções reais",
+    "title": "Up Connections",
+    "description": "Conectando pessoas pela luz em experiências ao vivo.",
     "hero": {
-      "title": "TRANSFORME A EXPERIÊNCIA NO ESTÁDIO:",
-      "subtitle": "viva a torcida como nunca antes.",
-      "cta": "CONHECER AGORA",
-      "call": "Participe de eventos esportivos de forma única: escolha seu assento, faça parte de mosaicos coletivos e interaja com outros torcedores."
+      "title": "TRANSFORME MILHARES DE CELULARES EM UM SHOW VIVO",
+      "subtitle": "Crie experiências de luz sincronizadas, mosaicos interativos e momentos inesquecíveis em tempo real.",
+      "cta": "Explorar a experiência",
+      "call": "O público deixa de apenas assistir ao evento e passa a fazer parte dele."
     },
     "about": {
-      "title": "SOBRE O APP:",
-      "text": "O Up é uma plataforma pioneira que organiza e potencializa a experiência da torcida dentro do estádio. Mais do que assistir ao jogo, cada torcedor passa a ser parte de uma obra coletiva: mosaicos que ganham vida com a luz da lanterna ou da tela do celular, tudo sincronizado em tempo real.",
-      "imageAlt": "Torcedor no estádio com mosaico"
+      "title": "EXPERIÊNCIAS IMERSIVAS",
+      "text": "O Up Connections é uma plataforma de sincronização ao vivo criada para transformar pessoas em parte ativa do espetáculo. Cada smartphone se torna um pixel e cada participante compõe uma experiência visual coletiva.",
+      "imageAlt": "Pessoa participando de uma experiência interativa com celular"
     },
     "how": {
-      "title": "COMO FUNCIONA:",
-      "subtitle": "Três passos simples para fazer parte do espetáculo",
+      "title": "COMO FUNCIONA",
+      "subtitle": "Três etapas simples para transformar o público em uma experiência visual sincronizada",
       "steps": {
         "step1": {
-          "title": "1. Detectamos sua presença no estádio",
-          "description": "Geolocalização confirma onde você está sentado.",
-          "alt": "Ícone de jogador de futebol"
-        },
-        "step2": {
-          "title": "2. Sincronizamos sua posição ao mosaico",
-          "description": "O app calcula exatamente quando seu celular deve acender.",
+          "title": "1. Detectamos a presença",
+          "description": "A tecnologia identifica onde os participantes estão por geolocalização e posicionamento inteligente.",
           "alt": "Ícone de geolocalização"
         },
+        "step2": {
+          "title": "2. Sincronizamos os celulares",
+          "description": "A plataforma coordena milhares de smartphones simultaneamente com tempo preciso.",
+          "alt": "Ícone de celular sincronizado"
+        },
         "step3": {
-          "title": "3. A arquibancada vira um espetáculo",
-          "description": "Cada torcedor contribui para formar o desenho, nome do time ou mensagem coletiva.",
-          "alt": "Ícone de estrelas em celebração"
+          "title": "3. O público vira o espetáculo",
+          "description": "Luzes, cores e animações ganham vida em mosaicos visuais e momentos imersivos.",
+          "alt": "Ícone de experiência luminosa"
         }
       }
     },
     "benefits": {
-      "title": "BENEFÍCIOS E DIFERENCIAIS:",
-      "subtitle": "Descubra por que o Up é único no mundo esportivo",
+      "title": "BENEFÍCIOS E DIFERENCIAIS",
+      "subtitle": "Tecnologia para experiências ao vivo de grande impacto",
       "cards": {
         "card1": {
           "title": "Mosaicos automáticos e sincronizados",
-          "description": "Tudo organizado pelo app, sem papel, sem erro, sem esforço.",
+          "description": "Tudo organizado pelo app, sem papel, sem erro e sem esforço operacional.",
           "alt": "Ícone de mosaico sincronizado"
         },
         "card2": {
-          "title": "Tecnologia de geolocalização",
-          "description": "Cada torcedor é identificado em seu assento e faz parte do espetáculo.",
-          "alt": "Ícone de geolocalização no estádio"
+          "title": "Geolocalização inteligente",
+          "description": "Cada participante é localizado para compor efeitos visuais precisos.",
+          "alt": "Ícone de geolocalização inteligente"
         },
         "card3": {
-          "title": "Rede social integrada",
-          "description": "Compartilhe fotos e vídeos, poste momentos e até publique direto no Instagram.",
+          "title": "Experiência social integrada",
+          "description": "Compartilhe fotos, vídeos e momentos diretamente pela plataforma.",
           "alt": "Ícone de rede social"
         },
         "card4": {
-          "title": "Oportunidades para patrocinadores",
-          "description": "Espaços de publicidade e ativações exclusivas dentro do app.",
+          "title": "Oportunidades para marcas",
+          "description": "Ativações, campanhas e formatos de exposição dentro da experiência.",
           "alt": "Ícone de marketing"
         },
         "card5": {
-          "title": "Inovação e pioneirismo",
-          "description": "Primeira solução a unir experiência coletiva, redes sociais e dados de torcida em uma só plataforma.",
+          "title": "Inovação em eventos ao vivo",
+          "description": "Uma solução que une interação coletiva, tecnologia visual e dados de engajamento em uma só plataforma.",
           "alt": "Ícone de inovação"
         }
       },
-      "cta": "Baixar Agora"
+      "cta": "Baixar app"
     },
     "inspiration": {
-      "text": "MILHARES DE VOZES, UMA SÓ LUZ: A FORÇA DA TORCIDA CONECTADA.",
-      "alt": "Ícone bola de futebol"
+      "text": "MILHARES DE TELAS, UMA SÓ LUZ: A FORÇA DE UM PÚBLICO CONECTADO.",
+      "alt": "Ícone de luz coletiva"
     },
     "feedbacks": {
-      "backgroundAlt": "Estádio de fundo",
+      "backgroundAlt": "Fundo de experiência ao vivo",
       "title": "FEEDBACKS:",
       "subtitle": "O que nossos usuários dizem",
       "cards": {
         "card1": {
           "name": "Lucas Andrade",
-          "role": "Torcedor Apaixonado",
-          "feedback": "Nunca pensei que meu celular pudesse fazer parte da festa do estádio. Quando vi o mosaico ganhando forma, senti que estava dentro de algo maior. Foi emocionante participar dessa experiência coletiva.",
-          "altAvatar": "Foto do torcedor Lucas Andrade",
+          "role": "Participante",
+          "feedback": "Nunca pensei que meu celular pudesse fazer parte de uma experiência visual desse tamanho. Foi emocionante ver o mosaico ganhando forma em tempo real.",
+          "altAvatar": "Foto de Lucas Andrade",
           "quoteBgAlt": "Fundo estilizado de aspas",
           "quoteIconAlt": "Ícone de aspas decorativo"
         },
         "card2": {
           "name": "Mariana Costa",
-          "role": "Gerente de Marketing Esportivo",
-          "feedback": "O Up trouxe inovação e emoção ao nosso jogo. Conseguimos engajar milhares de torcedores de uma forma única, sem complicação logística e com impacto visual impressionante",
-          "altAvatar": "Foto do torcedor Mariana Costa",
+          "role": "Gerente de Marketing",
+          "feedback": "O Up trouxe inovação e emoção ao nosso evento. Conseguimos engajar milhares de pessoas com impacto visual impressionante.",
+          "altAvatar": "Foto de Mariana Costa",
           "quoteBgAlt": "Fundo estilizado de aspas",
           "quoteIconAlt": "Ícone de aspas decorativo"
         },
         "card3": {
           "name": "Ricardo Menezes",
-          "role": "Diretor de Marketing de Marca Parceira",
-          "feedback": "Com a Up conseguimos conectar nossa marca diretamente à emoção da torcida. O alcance e a lembrança de marca foram muito superiores a qualquer ação tradicional que já havíamos feito no estádio.",
-          "altAvatar": "Foto do torcedor Ricardo Menezes",
+          "role": "Diretor de Marca Parceira",
+          "feedback": "Com a Up, conectamos nossa marca diretamente à emoção do público. O alcance e a lembrança de marca foram muito superiores a uma ativação tradicional.",
+          "altAvatar": "Foto de Ricardo Menezes",
           "quoteBgAlt": "Fundo estilizado de aspas",
           "quoteIconAlt": "Ícone de aspas decorativo"
         }
       }
     },
     "download": {
-      "title": "PRONTO PARA VIVER A TORCIDA DE UM JEITO NOVO?",
-      "subtitle": "Imagine ver milhares de torcedores transformando o estádio em um mosaico vivo, todos conectados pelo mesmo app. Essa é a revolução que estamos trazendo.",
+      "title": "PRONTO PARA CRIAR UMA EXPERIÊNCIA AO VIVO INESQUECÍVEL?",
+      "subtitle": "Imagine milhares de pessoas transformando seus celulares em um mosaico vivo, todas conectadas pela mesma plataforma.",
       "googlePlayAlt": "Disponível no Google Play",
       "appStoreAlt": "Disponível na App Store"
     }
@@ -149,7 +149,7 @@
     "social": {
       "title": "Social Mídia"
     },
-    "rights": "Conectando Torcidas, Criando Memórias. – Todos os direitos reservados."
+    "rights": "Conectando pessoas, criando memórias. Todos os direitos reservados."
   },
   "privacyPolicy": {
     "title": "Política de Privacidade",
@@ -272,7 +272,7 @@
         "title": "1. Definições",
         "paragraphs": [
           "Aplicativo refere-se ao software móvel Up Connections, disponível para download nas lojas App Store e Google Play.",
-          "Serviços referem-se às funcionalidades oferecidas pelo aplicativo — como detecção de assento no estádio, sincronização de mosaicos luminosos, rede social de torcedores, partilha de fotos/vídeos, interações e outros recursos.",
+          "Serviços referem-se às funcionalidades oferecidas pelo aplicativo — como detecção de assento no estádio, sincronização de mosaicos luminosos, rede social de participantes, partilha de fotos/vídeos, interações e outros recursos.",
           "Conta refere-se ao perfil de usuário criado para acessar os serviços.",
           "Evento refere-se ao evento esportivo ou local onde o aplicativo é utilizado e no qual os mosaicos ou interações ocorrem."
         ]

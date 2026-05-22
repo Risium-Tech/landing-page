@@ -1,21 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { useLocale, useTranslations } from "next-intl";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { scrollToSection } from "@/utils/scrollToSection";
-
-const navItems = [
-  { key: "home", href: "#home" },
-  { key: "about", href: "#about" },
-  { key: "how", href: "#how" },
-  { key: "benefits", href: "#benefits" },
-  { key: "feedbacks", href: "#feedbacks" },
-  { key: "contact", href: "#contact" },
-];
+import type { LandingCopy } from "@/components/sections/LuminaLanding/shared";
 
 const languages = [
   { code: "pt", flag: "https://flagcdn.com/br.svg", label: "Português (BR)" },
@@ -24,52 +15,56 @@ const languages = [
   { code: "es", flag: "https://flagcdn.com/es.svg", label: "Español" },
 ];
 
-type InstallButtonProps = {
-  children: React.ReactNode;
-  className?: string;
-  onClick?: () => void;
-  locale: string;
-};
-
-function InstallButton({ children, className = "", locale, onClick }: InstallButtonProps) {
-  const handleClick = () => {
-    window.location.href = `/${locale}/identify-os`;
-    onClick?.();
-  };
-
-  return (
-    <button
-      type="button"
-      onClick={handleClick}
-      className={`inline-flex items-center justify-center rounded-full bg-[image:var(--gradient-blue-green)] px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 ${className}`}
-    >
-      {children}
-    </button>
-  );
-}
-
-export default function Header() {
+export default function Header({ copy, locale }: { copy: LandingCopy; locale: string }) {
   const [isOpen, setIsOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
-  const t = useTranslations("Header");
-
   const langRef = useRef<HTMLDivElement>(null);
-
-  const locale = useLocale();
-  const currentLang = languages.find((l) => l.code === locale) || languages[0];
-
-  const handleLanguageChange = (locale: string) => {
-    const segments = pathname.split("/").filter(Boolean);
-    segments[0] = locale;
-    router.push("/" + segments.join("/"));
-    setLangOpen(false);
-  };
+  const currentLang = languages.find((language) => language.code === locale) || languages[0];
+  const navItems = [
+    { label: copy.nav.home, href: "#home" },
+    { label: copy.nav.technology, href: "#technology" },
+    { label: copy.nav.experiences, href: "#experiences" },
+    { label: copy.nav.solutions, href: "#solutions" },
+    { label: copy.nav.sponsors, href: "#sponsors" },
+    { label: copy.nav.contact, href: "#contact" },
+  ];
 
   useEffect(() => {
-    function handleClickOutside(e: MouseEvent) {
-      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+    let frameId = 0;
+    let lastScrolled = window.scrollY > 20;
+
+    setScrolled(lastScrolled);
+
+    const updateScrolled = () => {
+      frameId = 0;
+      const nextScrolled = window.scrollY > 20;
+
+      if (nextScrolled !== lastScrolled) {
+        lastScrolled = nextScrolled;
+        setScrolled(nextScrolled);
+      }
+    };
+
+    const onScroll = () => {
+      if (!frameId) {
+        frameId = requestAnimationFrame(updateScrolled);
+      }
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(frameId);
+    };
+  }, []);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (langRef.current && !langRef.current.contains(event.target as Node)) {
         setLangOpen(false);
       }
     }
@@ -78,107 +73,133 @@ export default function Header() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const handleLanguageChange = (nextLocale: string) => {
+    const segments = pathname.split("/").filter(Boolean);
+    segments[0] = nextLocale;
+    router.push("/" + segments.join("/"));
+    setLangOpen(false);
+  };
+
   const handleScroll = (id: string) => {
     scrollToSection(id, locale, pathname, router);
     setIsOpen(false);
   };
 
+  const handleDownload = () => {
+    window.location.href = `/${locale}/identify-os`;
+  };
+
   return (
-    <header className="border-yellow-normal sticky top-0 z-50 border-b-4 bg-white shadow-sm">
-      <div className="container mx-auto flex items-center justify-between px-6 py-4">
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+        scrolled ? "border-b border-border bg-night-deep/75 shadow-soft-glow backdrop-blur-xl" : "bg-transparent"
+      }`}
+    >
+      <nav className="mx-auto grid min-h-20 w-full max-w-[1880px] grid-cols-[auto_1fr_auto] items-center gap-8 px-8 py-3 md:px-10 xl:px-12">
         <Link
           href={`/${locale}`}
-          onClick={(e) => {
+          onClick={(event) => {
             if (pathname === `/${locale}` || pathname === "/") {
-              e.preventDefault();
+              event.preventDefault();
               handleScroll("#home");
             }
           }}
+          className="group flex items-center gap-2"
         >
-          <Image src="/svg/logo.svg" alt="Up Connections" width={70} height={40} />
+          <Image
+            src="/svg/logo.svg"
+            alt="Up Connections"
+            width={80}
+            height={98}
+            className="h-14 w-auto object-contain"
+            priority
+          />
         </Link>
 
-        <nav className="hidden items-center space-x-8 lg:flex">
+        <ul className="hidden items-center justify-center gap-9 lg:flex">
           {navItems.map((item) => (
-            <button
-              key={item.key}
-              onClick={() => handleScroll(item.href)}
-              className="text-gray-dark hover:text-blue-normal text-sm font-semibold tracking-wide uppercase"
-            >
-              {t(item.key)}
-            </button>
+            <li key={item.href}>
+              <button
+                type="button"
+                onClick={() => handleScroll(item.href)}
+                className="after:bg-primary text-muted-foreground hover:text-primary relative text-base font-medium transition-colors after:absolute after:bottom-[-4px] after:left-0 after:h-px after:w-0 after:transition-all hover:after:w-full"
+              >
+                {item.label}
+              </button>
+            </li>
           ))}
-        </nav>
+        </ul>
 
-        <div className="relative flex items-center gap-4">
+        <div className="flex items-center justify-end gap-4">
           <div className="relative" ref={langRef}>
             <button
-              onClick={() => setLangOpen(!langOpen)}
-              aria-label="Mudar idioma"
-              className="flex items-center gap-2 rounded-md border px-2 py-1 shadow-sm hover:bg-gray-50"
+              type="button"
+              onClick={() => setLangOpen((value) => !value)}
+              aria-label={copy.nav.changeLanguage}
+              className="glass-border bg-card-glass flex min-h-11 min-w-14 items-center justify-center rounded-full px-4 py-2.5 transition hover:bg-primary/10"
             >
-              <Image
-                src={currentLang.flag}
-                alt={currentLang.label}
-                width={24}
-                height={24}
-                unoptimized
-              />
+              <Image src={currentLang.flag} alt={currentLang.label} width={30} height={30} unoptimized />
             </button>
 
             {langOpen && (
-              <div className="absolute right-0 mt-2 flex flex-col rounded-md border bg-white shadow-md">
-                {languages.map((lang) => (
+              <div className="glass-border bg-night-deep/95 absolute right-0 mt-3 flex min-w-20 flex-col rounded-2xl p-2 shadow-soft-glow backdrop-blur-xl">
+                {languages.map((language) => (
                   <button
-                    key={lang.code}
-                    onClick={() => handleLanguageChange(lang.code)}
-                    className="px-3 py-2 hover:bg-gray-100"
+                    key={language.code}
+                    type="button"
+                    onClick={() => handleLanguageChange(language.code)}
+                    className="flex min-h-12 items-center justify-center rounded-xl px-4 py-3 transition hover:bg-primary/10"
+                    aria-label={language.label}
                   >
-                    <Image src={lang.flag} alt={lang.label} width={32} height={32} unoptimized />
+                    <Image src={language.flag} alt={language.label} width={34} height={34} unoptimized />
                   </button>
                 ))}
               </div>
             )}
           </div>
 
-          <div className="hidden lg:block">
-            <InstallButton locale={locale}>{t("download")}</InstallButton>
-          </div>
+          <button
+            type="button"
+            onClick={handleDownload}
+            className="bg-glow text-primary-foreground shadow-soft-glow hidden rounded-full px-6 py-3 text-base font-semibold transition-all hover:scale-[1.03] hover:shadow-glow lg:inline-flex"
+          >
+            {copy.nav.download}
+          </button>
 
           <button
-            className="rounded-full bg-[image:var(--gradient-blue-green)] p-3 text-white transition hover:opacity-90 lg:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+            type="button"
+            className="text-foreground lg:hidden"
+            onClick={() => setIsOpen((value) => !value)}
+            aria-label={isOpen ? copy.nav.closeMenu : copy.nav.openMenu}
           >
-            {isOpen ? (
-              <XMarkIcon className="h-7 w-7" aria-hidden="true" />
-            ) : (
-              <Bars3Icon className="h-7 w-7" aria-hidden="true" />
-            )}
+            {isOpen ? <XMarkIcon className="h-7 w-7" /> : <Bars3Icon className="h-7 w-7" />}
           </button>
         </div>
-      </div>
+      </nav>
 
       {isOpen && (
-        <nav className="flex flex-col space-y-3 bg-white px-4 py-4 shadow-lg lg:hidden">
-          {navItems.map((item) => (
-            <button
-              key={item.key}
-              onClick={() => handleScroll(item.href)}
-              className="text-gray-dark hover:text-blue-normal text-sm font-semibold uppercase"
-            >
-              {t(item.key)}
-            </button>
-          ))}
-
-          <InstallButton
-            className="w-full text-center"
-            locale={locale}
-            onClick={() => setIsOpen(false)}
+        <div className="border-t border-border bg-night-deep/95 px-4 py-6 backdrop-blur-xl md:px-6 lg:hidden">
+          <ul className="flex flex-col gap-4">
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <button
+                  type="button"
+                  onClick={() => handleScroll(item.href)}
+                  className="text-lg text-foreground transition-colors hover:text-primary"
+                >
+                  {item.label}
+                </button>
+              </li>
+            ))}
+          </ul>
+          <button
+            type="button"
+            onClick={handleDownload}
+            className="bg-glow text-primary-foreground mt-6 w-full rounded-full px-5 py-3 font-semibold"
           >
-            {t("download")}
-          </InstallButton>
-        </nav>
+            {copy.nav.download}
+          </button>
+        </div>
       )}
     </header>
   );

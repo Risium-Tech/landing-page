@@ -1,64 +1,40 @@
-import { getTranslations } from "next-intl/server";
-import { generateSeoMetadata } from "@/components/SeoMetaData";
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
-import HeroBanner from "@/components/sections/HeroBanner/HeroBanner";
-import About from "@/components/sections/About/About";
-import HowWorks from "@/components/sections/HowWorks/HowWorks";
-import Benefits from "@/components/sections/Benefits.tsx/Benefits";
-import InspirationText from "@/components/sections/InspirationText/InspirationText";
-import Feedback from "@/components/sections/Feedback/Feedback";
-import DownloadBanner from "@/components/sections/DownloadBanner/DownloadBanner";
+import LuminaLanding from "@/components/sections/LuminaLanding/LuminaLanding";
 import Footer from "@/components/layout/Footer";
+import { getLandingCopy } from "@/utils/landingCopy";
 
-export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }) => {
+export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
   const { locale } = await params;
+  const copy = getLandingCopy(locale);
 
-  return generateSeoMetadata({
-    locale,
-    namespace: "HomePage",
-  });
+  return {
+    title: copy.seo.title,
+    description: copy.seo.description,
+    openGraph: {
+      title: copy.seo.title,
+      description: copy.seo.description,
+      siteName: "Up Connections",
+      locale,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: copy.seo.title,
+      description: copy.seo.description,
+    },
+  };
 };
 
-export default async function HomePage() {
-  const t = await getTranslations("HomePage");
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const copy = getLandingCopy(locale);
 
   return (
     <>
-      <Header />
-
-      <main>
-        <section id="home">
-          <HeroBanner />
-        </section>
-
-        <section id="about">
-          <About />
-        </section>
-
-        <section id="how">
-          <HowWorks />
-        </section>
-
-        <section id="benefits">
-          <Benefits />
-        </section>
-
-        <section id="inspiration">
-          <InspirationText text={t("inspiration.text")} alt={t("inspiration.alt")} />
-        </section>
-
-        <section id="feedbacks">
-          <Feedback />
-        </section>
-
-        <section id="download">
-          <DownloadBanner />
-        </section>
-      </main>
-
-      <footer id="contact">
-        <Footer />
-      </footer>
+      <Header copy={copy} locale={locale} />
+      <LuminaLanding copy={copy} />
+      <Footer copy={copy} locale={locale} />
     </>
   );
 }

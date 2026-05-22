@@ -11,28 +11,28 @@
   },
   "HomePage": {
     "seo": {
-      "title": "Bienvenido a Up Connections",
-      "description": "Conectando ideas y personas para soluciones reales"
+      "title": "Up Connections | Experiencias de luz sincronizadas",
+      "description": "Plataforma de sincronizaci?n en vivo para crear mosaicos interactivos, experiencias de luz y participaci?n colectiva en grandes eventos."
     },
-    "title": "Bienvenido a Up Connections",
-    "description": "Conectando ideas y personas para crear soluciones reales",
+    "title": "Up Connections",
+    "description": "Conectando personas a trav?s de la luz en experiencias en vivo.",
     "hero": {
-      "title": "VIVE EL ESTADIO COMO NUNCA ANTES:",
-      "subtitle": "siente la pasión de la hinchada.",
-      "cta": "DESCÚBRELO",
-      "call": "Participa en los eventos deportivos de una forma única: elige tu asiento, forma parte de mosaicos colectivos e interactúa con otros aficionados."
+      "title": "CONVIERTE MILES DE M?VILES EN UN SHOW VIVO",
+      "subtitle": "Crea experiencias de luz sincronizadas, mosaicos interactivos y momentos inolvidables en tiempo real.",
+      "cta": "Explorar la experiencia",
+      "call": "El p?blico deja de solo mirar el evento y empieza a formar parte de ?l."
     },
     "about": {
       "title": "SOBRE LA APP:",
-      "text": "Up es una plataforma pionera que organiza y potencia la experiencia de los aficionados en el estadio. Más que ver el partido, cada hincha se convierte en parte de una obra colectiva: mosaicos que cobran vida con la luz del móvil, todo sincronizado en tiempo real.",
-      "imageAlt": "Hincha en el estadio con mosaico"
+      "text": "Up es una plataforma pionera que organiza y potencia la experiencia de los participantes en el evento. Más que ver el evento, cada participante se convierte en parte de una obra colectiva: mosaicos que cobran vida con la luz del móvil, todo sincronizado en tiempo real.",
+      "imageAlt": "Participante en el evento con mosaico"
     },
     "how": {
       "title": "CÓMO FUNCIONA:",
       "subtitle": "Tres pasos sencillos para ser parte del espectáculo",
       "steps": {
         "step1": {
-          "title": "1. Detectamos tu presencia en el estadio",
+          "title": "1. Detectamos tu presencia en el evento",
           "description": "La geolocalización confirma dónde estás sentado.",
           "alt": "Ícono jugador de fútbol"
         },
@@ -43,7 +43,7 @@
         },
         "step3": {
           "title": "3. Las gradas se convierten en un show",
-          "description": "Cada aficionado ayuda a formar la imagen, el nombre del equipo o el mensaje colectivo.",
+          "description": "Cada participante ayuda a formar la imagen, el nombre del equipo o el mensaje colectivo.",
           "alt": "Ícono de estrellas"
         }
       }
@@ -59,8 +59,8 @@
         },
         "card2": {
           "title": "Tecnología de geolocalización",
-          "description": "Cada hincha se identifica en su asiento y forma parte del show.",
-          "alt": "Ícono geolocalización estadio"
+          "description": "Cada participante se identifica en su asiento y forma parte del show.",
+          "alt": "Ícono geolocalización evento"
         },
         "card3": {
           "title": "Red social integrada",
@@ -74,25 +74,25 @@
         },
         "card5": {
           "title": "Innovación y espíritu pionero",
-          "description": "La primera solución que une experiencias colectivas, redes sociales y datos de hinchas en una sola plataforma.",
+          "description": "La primera solución que une experiencias colectivas, redes sociales y datos de participantes en una sola plataforma.",
           "alt": "Ícono innovación"
         }
       },
       "cta": "Descargar ahora"
     },
     "inspiration": {
-      "text": "MILES DE VOCES, UNA SOLA LUZ: LA FUERZA DE LA HINCHADA UNIDA.",
-      "alt": "Ícono balón de fútbol"
+      "text": "MILES DE PANTALLAS, UNA SOLA LUZ: LA FUERZA DE UN P?BLICO CONECTADO.",
+      "alt": "?cono de luz colectiva"
     },
     "feedbacks": {
-      "backgroundAlt": "Fondo del estadio",
+      "backgroundAlt": "Fondo del evento",
       "title": "RESEÑAS:",
       "subtitle": "Lo que dicen nuestros usuarios",
       "cards": {
         "card1": {
           "name": "Lucas Andrade",
-          "role": "Hincha apasionado",
-          "feedback": "Nunca pensé que mi móvil pudiera ser parte de la fiesta en el estadio. Cuando vi el mosaico tomando forma, sentí que era parte de algo más grande. Fue emocionante vivir esta experiencia colectiva.",
+          "role": "Participante apasionado",
+          "feedback": "Nunca pensé que mi móvil pudiera ser parte de la fiesta en el evento. Cuando vi el mosaico tomando forma, sentí que era parte de algo más grande. Fue emocionante vivir esta experiencia colectiva.",
           "altAvatar": "Foto de Lucas Andrade",
           "quoteBgAlt": "Fondo de comillas estilizado",
           "quoteIconAlt": "Ícono decorativo de comillas"
@@ -100,7 +100,7 @@
         "card2": {
           "name": "Mariana Costa",
           "role": "Gerente de marketing deportivo",
-          "feedback": "Up trajo innovación y emoción a nuestro partido. Logramos involucrar a miles de hinchas de una manera única, sin complicaciones logísticas y con un impacto visual increíble.",
+          "feedback": "Up trajo innovación y emoción a nuestro evento. Logramos involucrar a miles de participantes de una manera única, sin complicaciones logísticas y con un impacto visual increíble.",
           "altAvatar": "Foto de Mariana Costa",
           "quoteBgAlt": "Fondo de comillas estilizado",
           "quoteIconAlt": "Ícono decorativo de comillas"
@@ -108,7 +108,7 @@
         "card3": {
           "name": "Ricardo Menezes",
           "role": "Director de marketing de marca",
-          "feedback": "Con Up logramos conectar nuestra marca directamente con la emoción de la hinchada. El alcance y el recuerdo de marca superaron cualquier acción tradicional en el estadio.",
+          "feedback": "Con Up logramos conectar nuestra marca directamente con la emoción de la comunidad. El alcance y el recuerdo de marca superaron cualquier acción tradicional en el evento.",
           "altAvatar": "Foto de Ricardo Menezes",
           "quoteBgAlt": "Fondo de comillas estilizado",
           "quoteIconAlt": "Ícono decorativo de comillas"
@@ -116,8 +116,8 @@
       }
     },
     "download": {
-      "title": "¿LISTO PARA VIVIR LA HINCHADA DE UNA NUEVA MANERA?",
-      "subtitle": "Imagina miles de aficionados transformando el estadio en un mosaico vivo, todos conectados por la misma app. Esta es la revolución que traemos.",
+      "title": "?LISTO PARA CREAR UNA EXPERIENCIA EN VIVO INOLVIDABLE?",
+      "subtitle": "Imagina miles de personas convirtiendo sus m?viles en un mosaico vivo, todas conectadas por la misma plataforma.",
       "googlePlayAlt": "Disponible en Google Play",
       "appStoreAlt": "Disponible en App Store"
     }
@@ -149,7 +149,7 @@
     "social": {
       "title": "Redes sociales"
     },
-    "rights": "Conectando hinchas, creando recuerdos. – Todos los derechos reservados."
+    "rights": "Conectando personas, creando recuerdos. Todos los derechos reservados."
   },
   "privacyPolicy": {
     "title": "Política de Privacidad",
@@ -272,7 +272,7 @@
         "title": "1. Definiciones",
         "paragraphs": [
           "Aplicación: el software móvil Up Connections disponible en App Store y Google Play.",
-          "Servicios: funcionalidades ofrecidas, como detección de asiento en el estadio, sincronización de mosaicos luminosos, red social de aficionados, publicación de fotos/vídeos e interacciones.",
+          "Servicios: funcionalidades ofrecidas, como detección de asiento en el evento, sincronización de mosaicos luminosos, red social de participantes, publicación de fotos/vídeos e interacciones.",
           "Cuenta: el perfil de usuario creado para acceder a los servicios.",
           "Evento: el evento deportivo o lugar donde se utiliza la aplicación y donde se realizan los mosaicos o interacciones."
         ]
@@ -280,8 +280,8 @@
       "2": {
         "title": "2. Uso de la Aplicación y Servicios",
         "paragraphs": [
-          "a) La aplicación está destinada a aficionados que desean participar en experiencias interactivas (como mosaicos luminosos) y utilizar las funciones de comunidad.",
-          "b) Te comprometes a utilizar la aplicación de forma lícita y conforme a la legislación aplicable, a las normas del estadio/evento, a nuestras directrices de comunidad y a estos Términos.",
+          "a) La aplicación está destinada a participantes que desean participar en experiencias interactivas (como mosaicos luminosos) y utilizar las funciones de comunidad.",
+          "b) Te comprometes a utilizar la aplicación de forma lícita y conforme a la legislación aplicable, a las normas del evento, a nuestras directrices de comunidad y a estos Términos.",
           "c) No podrás utilizar la aplicación de manera que afecte negativamente la experiencia de otros usuarios o del evento, incluyendo interferencias con la sincronización o geolocalización."
         ]
       },
@@ -297,7 +297,7 @@
       "4": {
         "title": "4. Geolocalización y Sincronización en Eventos",
         "paragraphs": [
-          "a) El servicio incluye la detección de presencia en el estadio/evento mediante geolocalización u otros métodos técnicos para sincronizar tu asiento.",
+          "a) El servicio incluye la detección de presencia en el evento mediante geolocalización u otros métodos técnicos para sincronizar tu asiento.",
           "b) Autorizas el uso de tu ubicación/posición cuando sea necesario para permitir la sincronización en el evento.",
           "c) Te comprometes a utilizar la app de forma segura, respetando las normas del recinto.",
           "d) No garantizamos que todos los eventos admitan el 100% de las funcionalidades o que no ocurran fallos técnicos."
@@ -333,7 +333,7 @@
         "paragraphs": [
           "a) La aplicación y los servicios se proporcionan “tal cual” y “según disponibilidad”, sin garantías de funcionamiento continuo.",
           "b) Up Connections no se responsabiliza de daños directos o indirectos derivados del uso o imposibilidad de uso de la aplicación.",
-          "c) Las experiencias en eventos dependen de factores externos (red móvil, cobertura, reglas del estadio), por lo que no garantizamos resultados específicos."
+          "c) Las experiencias en eventos dependen de factores externos (red móvil, cobertura, reglas del evento), por lo que no garantizamos resultados específicos."
         ]
       },
       "9": {

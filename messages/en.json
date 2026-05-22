@@ -11,30 +11,30 @@
   },
   "HomePage": {
     "seo": {
-      "title": "Welcome to Up Connections",
-      "description": "Connecting ideas and people for real solutions"
+      "title": "Up Connections | Synchronized light experiences",
+      "description": "Live synchronization platform for interactive mosaics, light experiences and collective engagement at large events."
     },
-    "title": "Welcome to Up Connections",
-    "description": "Connecting ideas and people into real solutions",
+    "title": "Up Connections",
+    "description": "Connecting people through light in live experiences.",
     "hero": {
-      "title": "EXPERIENCE THE STADIUM LIKE NEVER BEFORE:",
-      "subtitle": "feel the energy of the crowd.",
-      "cta": "EXPLORE NOW",
-      "call": "Join sports events in a unique way: choose your seat, take part in collective mosaics, and interact with other fans."
+      "title": "TURN THOUSANDS OF PHONES INTO A LIVING SHOW",
+      "subtitle": "Create synchronized light experiences, interactive mosaics and unforgettable moments in real time.",
+      "cta": "Explore the experience",
+      "call": "The audience no longer just watches the event. They become part of it."
     },
     "about": {
       "title": "ABOUT THE APP:",
-      "text": "Up is a pioneering platform that organizes and enhances the fan experience inside the stadium. More than just watching the game, each fan becomes part of a collective artwork: mosaics that come to life with the light from a flashlight or phone screen, all synchronized in real time.",
-      "imageAlt": "Fan in stadium with mosaic"
+      "text": "Up is a pioneering platform that organizes and enhances the participant experience inside the event. More than just watching the game, each participant becomes part of a collective artwork: mosaics that come to life with the light from a flashlight or phone screen, all synchronized in real time.",
+      "imageAlt": "Participant in event with mosaic"
     },
     "how": {
       "title": "HOW IT WORKS:",
       "subtitle": "Three simple steps to be part of the show",
       "steps": {
         "step1": {
-          "title": "1. We detect your presence in the stadium",
+          "title": "1. We detect your presence in the event",
           "description": "Geolocation confirms where you're sitting.",
-          "alt": "Football player icon"
+          "alt": "Event player icon"
         },
         "step2": {
           "title": "2. We sync your position with the mosaic",
@@ -43,7 +43,7 @@
         },
         "step3": {
           "title": "3. The stands turn into a spectacle",
-          "description": "Each fan helps form the image, team name or collective message.",
+          "description": "Each participant helps form the image, team name or collective message.",
           "alt": "Celebration stars icon"
         }
       }
@@ -59,8 +59,8 @@
         },
         "card2": {
           "title": "Geolocation technology",
-          "description": "Each fan is identified in their seat and becomes part of the show.",
-          "alt": "Stadium geolocation icon"
+          "description": "Each participant is identified in their seat and becomes part of the show.",
+          "alt": "Event geolocation icon"
         },
         "card3": {
           "title": "Integrated social network",
@@ -74,52 +74,52 @@
         },
         "card5": {
           "title": "Innovation and pioneering spirit",
-          "description": "The first solution to combine collective experiences, social media, and fan data in one platform.",
+          "description": "The first solution to combine collective experiences, social media, and participant data in one platform.",
           "alt": "Innovation icon"
         }
       },
       "cta": "Download Now"
     },
     "inspiration": {
-      "text": "THOUSANDS OF VOICES, ONE LIGHT: THE POWER OF UNITED FANS.",
-      "alt": "Soccer ball icon"
+      "text": "THOUSANDS OF SCREENS, ONE LIGHT: THE POWER OF A CONNECTED AUDIENCE.",
+      "alt": "Collective light icon"
     },
     "feedbacks": {
-      "backgroundAlt": "Stadium background",
+      "backgroundAlt": "Event background",
       "title": "FEEDBACKS:",
       "subtitle": "What our users say",
       "cards": {
         "card1": {
           "name": "Lucas Andrade",
-          "role": "Passionate Fan",
-          "feedback": "I never thought my phone could be part of the stadium celebration. When I saw the mosaic taking shape, I felt like I was part of something bigger. It was exciting to take part in this collective experience.",
-          "altAvatar": "Photo of fan Lucas Andrade",
+          "role": "Passionate Participant",
+          "feedback": "I never thought my phone could be part of the event celebration. When I saw the mosaic taking shape, I felt like I was part of something bigger. It was exciting to take part in this collective experience.",
+          "altAvatar": "Photo of participant Lucas Andrade",
           "quoteBgAlt": "Stylized quote background",
           "quoteIconAlt": "Decorative quote icon"
         },
         "card2": {
           "name": "Mariana Costa",
           "role": "Sports Marketing Manager",
-          "feedback": "Up brought innovation and excitement to our game. We managed to engage thousands of fans in a unique way, with no logistical complications and with an impressive visual impact.",
-          "altAvatar": "Photo of fan Mariana Costa",
+          "feedback": "Up brought innovation and excitement to our game. We managed to engage thousands of participants in a unique way, with no logistical complications and with an impressive visual impact.",
+          "altAvatar": "Photo of participant Mariana Costa",
           "quoteBgAlt": "Stylized quote background",
           "quoteIconAlt": "Decorative quote icon"
         },
         "card3": {
           "name": "Ricardo Menezes",
           "role": "Partner Brand Marketing Director",
-          "feedback": "With Up we managed to connect our brand directly to the emotion of the crowd. The reach and brand recall were far greater than any traditional action we had ever done in the stadium.",
-          "altAvatar": "Photo of fan Ricardo Menezes",
+          "feedback": "With Up we managed to connect our brand directly to the emotion of the crowd. The reach and brand recall were far greater than any traditional action we had ever done in the event.",
+          "altAvatar": "Photo of participant Ricardo Menezes",
           "quoteBgAlt": "Stylized quote background",
           "quoteIconAlt": "Decorative quote icon"
         }
       }
     },
     "download": {
-      "title": "READY TO EXPERIENCE FANDOM IN A WHOLE NEW WAY?",
-      "subtitle": "Imagine thousands of fans turning the stadium into a living mosaic, all connected through the same app. This is the revolution we are bringing.",
-      "googlePlayAlt": "Get it on Google Play",
-      "appStoreAlt": "Download on the App Store"
+      "title": "READY TO CREATE AN UNFORGETTABLE LIVE EXPERIENCE?",
+      "subtitle": "Imagine thousands of people turning their phones into a living mosaic, all connected by the same platform.",
+      "googlePlayAlt": "Available on Google Play",
+      "appStoreAlt": "Available on the App Store"
     }
   },
   "Footer": {
@@ -149,7 +149,7 @@
     "social": {
       "title": "Social Media"
     },
-    "rights": "Connecting Fans, Creating Memories. – All rights reserved."
+    "rights": "Connecting people, creating memories. All rights reserved."
   },
   "privacyPolicy": {
     "title": "Privacy Policy",
@@ -272,7 +272,7 @@
         "title": "1. Definitions",
         "paragraphs": [
           "App: refers to the Up Connections mobile software available on the App Store and Google Play.",
-          "Services: features offered by the app — such as stadium seat detection, synchronized light mosaics, fan social network, photo/video sharing, interactions, and other resources.",
+          "Services: features offered by the app — such as event seat detection, synchronized light mosaics, participant social network, photo/video sharing, interactions, and other resources.",
           "Account: the user profile created to access the services.",
           "Event: the sports event or venue where the app is used and where mosaics or interactions take place."
         ]
@@ -280,8 +280,8 @@
       "2": {
         "title": "2. Use of the App and Services",
         "paragraphs": [
-          "a) The app is intended for fans and event participants who want to engage in interactive experiences (such as light mosaics) and use community features.",
-          "b) You agree to use the app lawfully, respecting applicable legislation, stadium/event regulations, our community guidelines, and these Terms.",
+          "a) The app is intended for participants and event participants who want to engage in interactive experiences (such as light mosaics) and use community features.",
+          "b) You agree to use the app lawfully, respecting applicable legislation, event/event regulations, our community guidelines, and these Terms.",
           "c) You may not use the app in a way that negatively affects the experience of other users or the event, including interfering with the mosaic synchronization system or geolocation."
         ]
       },
@@ -297,7 +297,7 @@
       "4": {
         "title": "4. Geolocation and Event Synchronization",
         "paragraphs": [
-          "a) The service includes detecting presence in the stadium/event via geolocation or other technical methods to synchronize your seat and participation in light mosaics.",
+          "a) The service includes detecting presence in the event/event via geolocation or other technical methods to synchronize your seat and participation in light mosaics.",
           "b) You authorize the use of your location or seating position as necessary to enable synchronization within the event.",
           "c) You agree to use the app safely, respecting the venue’s rules — such as smartphone use, flashlight, and screen brightness.",
           "d) We do not guarantee that all events support 100% of synchronization features or that technical failures will not occur."
@@ -333,7 +333,7 @@
         "paragraphs": [
           "a) The app and services are provided “as is” and “as available”. To the fullest extent allowed by law, we make no express or implied warranties about functionality or availability.",
           "b) Up Connections is not liable for direct or indirect damages, loss of data, or service interruptions resulting from use or inability to use the app.",
-          "c) Live events depend on many external factors (mobile network, stadium coverage, local regulations), and therefore we do not guarantee specific results."
+          "c) Live events depend on many external factors (mobile network, event coverage, local regulations), and therefore we do not guarantee specific results."
         ]
       },
       "9": {

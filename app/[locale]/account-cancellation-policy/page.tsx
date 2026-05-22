@@ -1,21 +1,24 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { getLandingCopy } from "@/utils/landingCopy";
 
 export const metadata = {
   title: "Política de Cancelamento de Conta - Up Connections",
 };
 
-export default function AccountCancellationPolicyPage() {
-  const t = useTranslations("accountCancellationPolicy");
+export default async function AccountCancellationPolicyPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const copy = getLandingCopy(locale);
+  const t = await getTranslations("accountCancellationPolicy");
   const sections = t.raw("sections");
 
   return (
     <>
-      <Header />
+      <Header copy={copy} locale={locale} />
 
       <main className="bg-white">
-        <section className="container mx-auto max-w-4xl px-6 py-16 text-gray-900">
+        <section className="container mx-auto max-w-4xl px-4 py-16 text-gray-900 md:px-6">
           <h1 className="mb-6 text-3xl font-bold md:text-4xl">{t("title")}</h1>
 
           <p className="mb-4">{t("intro")}</p>
@@ -192,7 +195,7 @@ export default function AccountCancellationPolicyPage() {
         </section>
       </main>
 
-      <Footer />
+      <Footer copy={copy} locale={locale} />
     </>
   );
 }
