@@ -5,6 +5,8 @@ import { getLandingCopy } from "@/utils/landingCopy";
 
 export const metadata = {
   title: "Termos e Condições – Up Connections",
+  description:
+    "Consulte os termos e condições de uso da Up Connections, incluindo regras de acesso, responsabilidades e uso da plataforma.",
 };
 
 export default async function TermsAndConditionsPage({ params }: { params: Promise<{ locale: string }> }) {

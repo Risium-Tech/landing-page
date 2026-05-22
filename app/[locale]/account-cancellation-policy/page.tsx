@@ -5,6 +5,8 @@ import { getLandingCopy } from "@/utils/landingCopy";
 
 export const metadata = {
   title: "Política de Cancelamento de Conta - Up Connections",
+  description:
+    "Entenda como solicitar o cancelamento de conta na Up Connections e quais informações são necessárias para concluir o processo.",
 };
 
 export default async function AccountCancellationPolicyPage({ params }: { params: Promise<{ locale: string }> }) {
