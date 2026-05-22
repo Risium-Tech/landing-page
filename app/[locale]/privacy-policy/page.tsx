@@ -5,6 +5,8 @@ import { getLandingCopy } from "@/utils/landingCopy";
 
 export const metadata = {
   title: "Política de Privacidade - Up Connections",
+  description:
+    "Conheça como a Up Connections coleta, utiliza e protege dados pessoais em suas experiências digitais e serviços.",
 };
 
 export default async function PrivacyPolicyPage({ params }: { params: Promise<{ locale: string }> }) {
