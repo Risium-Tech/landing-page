@@ -63,6 +63,26 @@ export default function Header({ copy, locale }: { copy: LandingCopy; locale: st
   }, []);
 
   useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (langRef.current && !langRef.current.contains(event.target as Node)) {
         setLangOpen(false);
@@ -78,6 +98,7 @@ export default function Header({ copy, locale }: { copy: LandingCopy; locale: st
     segments[0] = nextLocale;
     router.push("/" + segments.join("/"));
     setLangOpen(false);
+    setIsOpen(false);
   };
 
   const handleScroll = (id: string) => {
@@ -95,7 +116,7 @@ export default function Header({ copy, locale }: { copy: LandingCopy; locale: st
         scrolled ? "border-b border-border bg-night-deep/75 shadow-soft-glow backdrop-blur-xl" : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto grid min-h-20 w-full max-w-[1880px] grid-cols-[auto_1fr_auto] items-center gap-8 px-8 py-3 md:px-10 xl:px-12">
+      <nav className="mx-auto grid min-h-20 w-full max-w-[1880px] grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-3 md:px-10 lg:gap-8 xl:px-12">
         <Link
           href={`/${locale}`}
           onClick={(event) => {
@@ -104,7 +125,9 @@ export default function Header({ copy, locale }: { copy: LandingCopy; locale: st
               handleScroll("#home");
             }
           }}
-          className="group flex items-center gap-2"
+          className={`group flex items-center gap-2 transition-opacity lg:opacity-100 ${
+            isOpen ? "opacity-0" : "opacity-100"
+          }`}
         >
           <Image
             src="/svg/logo.svg"
@@ -130,7 +153,7 @@ export default function Header({ copy, locale }: { copy: LandingCopy; locale: st
           ))}
         </ul>
 
-        <div className="flex items-center justify-end gap-4">
+        <div className="flex items-center justify-end gap-3 lg:gap-4">
           <div className="relative" ref={langRef}>
             <button
               type="button"
@@ -168,39 +191,84 @@ export default function Header({ copy, locale }: { copy: LandingCopy; locale: st
 
           <button
             type="button"
-            className="text-foreground lg:hidden"
+            className={`text-foreground flex h-11 w-11 items-center justify-center rounded-full transition hover:bg-primary/10 lg:hidden ${
+              isOpen ? "invisible" : "visible"
+            }`}
             onClick={() => setIsOpen((value) => !value)}
             aria-label={isOpen ? copy.nav.closeMenu : copy.nav.openMenu}
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
           >
-            {isOpen ? <XMarkIcon className="h-7 w-7" /> : <Bars3Icon className="h-7 w-7" />}
+            <Bars3Icon className="h-7 w-7" />
           </button>
         </div>
       </nav>
 
-      {isOpen && (
-        <div className="border-t border-border bg-night-deep/95 px-4 py-6 backdrop-blur-xl md:px-6 lg:hidden">
-          <ul className="flex flex-col gap-4">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <button
-                  type="button"
-                  onClick={() => handleScroll(item.href)}
-                  className="text-lg text-foreground transition-colors hover:text-primary"
-                >
-                  {item.label}
-                </button>
-              </li>
-            ))}
-          </ul>
+      <div
+        className={`fixed inset-0 z-50 lg:hidden ${
+          isOpen ? "pointer-events-auto" : "pointer-events-none"
+        }`}
+        aria-hidden={!isOpen}
+      >
+        <button
+          type="button"
+          aria-label={copy.nav.closeMenu}
+          className={`absolute inset-0 z-0 bg-night-deep/60 backdrop-blur-sm transition-opacity duration-300 ${
+            isOpen ? "opacity-100" : "opacity-0"
+          }`}
+          onClick={() => setIsOpen(false)}
+        />
+
+        <aside
+          id="mobile-menu"
+          className={`glass-border bg-night-deep/95 shadow-glow absolute top-0 left-0 z-10 h-dvh w-[min(82vw,22rem)] overflow-y-auto px-6 py-6 transition-transform duration-300 ${
+            isOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+          aria-label="Menu mobile"
+        >
+          <div className="flex items-center justify-between gap-4">
+            <Image
+              src="/svg/logo.svg"
+              alt="Up Connections"
+              width={64}
+              height={78}
+              className="h-12 w-auto object-contain"
+            />
+            <button
+              type="button"
+              onClick={() => setIsOpen(false)}
+              className="text-foreground flex h-11 w-11 items-center justify-center rounded-full transition hover:bg-primary/10"
+              aria-label={copy.nav.closeMenu}
+            >
+              <XMarkIcon className="h-7 w-7" />
+            </button>
+          </div>
+
+          <nav className="mt-10" aria-label="Menu">
+            <ul className="flex flex-col gap-2">
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <button
+                    type="button"
+                    onClick={() => handleScroll(item.href)}
+                    className="hover:bg-primary/10 hover:text-primary flex w-full rounded-2xl px-4 py-3 text-left text-lg font-semibold text-foreground transition-colors"
+                  >
+                    {item.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
           <button
             type="button"
             onClick={handleDownload}
-            className="bg-glow text-primary-foreground mt-6 w-full rounded-full px-5 py-3 font-semibold"
+            className="bg-glow text-primary-foreground shadow-soft-glow mt-8 w-full rounded-full px-5 py-3 font-semibold"
           >
             {copy.nav.download}
           </button>
-        </div>
-      )}
+        </aside>
+      </div>
     </header>
   );
 }
