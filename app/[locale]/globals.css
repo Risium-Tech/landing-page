@@ -491,32 +491,7 @@ h4 {
   }
 
   .step-flow-card::before {
-    content: "";
-    position: absolute;
-    inset: -1px;
-    border-radius: inherit;
-    padding: 1px;
-    background: linear-gradient(
-      90deg,
-      oklch(0.74 0.17 148),
-      oklch(0.87 0.17 92),
-      rgb(103 232 249),
-      rgb(232 121 249),
-      oklch(0.74 0.17 148)
-    );
-    background-size: 200% 100%;
-    opacity: 0.08;
-    pointer-events: none;
-    animation: step-flow-border 4.2s ease-in-out infinite;
-    animation-delay: inherit;
-    mask:
-      linear-gradient(#000 0 0) content-box,
-      linear-gradient(#000 0 0);
-    mask-composite: exclude;
-    -webkit-mask:
-      linear-gradient(#000 0 0) content-box,
-      linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
+    content: none;
   }
 
   .phone-shape {
