@@ -154,6 +154,7 @@ export const landingCopy = {
       text:
         "Plataforma de sincronização ao vivo que transforma qualquer público em uma experiência visual coletiva.",
       contact: "Contato",
+      emailLabel: "Enviar e-mail",
       legal: "Termos",
       terms: "Termos e Condições",
       privacy: "Política de Privacidade",
@@ -315,6 +316,7 @@ export const landingCopy = {
       text:
         "Plataforma de sincronização ao vivo que transforma qualquer público numa experiência visual coletiva.",
       contact: "Contacto",
+      emailLabel: "Enviar email",
       legal: "Termos",
       terms: "Termos e Condições",
       privacy: "Política de Privacidade",
@@ -475,6 +477,7 @@ export const landingCopy = {
     footer: {
       text: "Live synchronization platform that turns any audience into a collective visual experience.",
       contact: "Contact",
+      emailLabel: "Send email",
       legal: "Legal",
       terms: "Terms and Conditions",
       privacy: "Privacy Policy",
@@ -636,6 +639,7 @@ export const landingCopy = {
       text:
         "Plataforma de sincronización en vivo que convierte cualquier público en una experiencia visual colectiva.",
       contact: "Contacto",
+      emailLabel: "Enviar correo",
       legal: "Términos",
       terms: "Términos y Condiciones",
       privacy: "Política de Privacidad",

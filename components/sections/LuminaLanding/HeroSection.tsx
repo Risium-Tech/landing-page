@@ -18,6 +18,8 @@ export default function HeroSection({ copy }: { copy: LandingCopy }) {
         sizes="100vw"
         className="absolute inset-0 z-0 object-cover object-center opacity-80"
         priority
+        loading="eager"
+        fetchPriority="high"
         aria-hidden="true"
       />
       <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_90%_60%_at_50%_0%,oklch(0.74_0.17_148_/_0.12),transparent_60%),linear-gradient(180deg,oklch(0.11_0.05_255_/_0.66)_0%,oklch(0.16_0.06_252_/_0.76)_100%)]" />
@@ -59,7 +61,6 @@ export default function HeroSection({ copy }: { copy: LandingCopy }) {
             width={900}
             height={720}
             className="relative h-auto w-[600px] object-contain object-bottom md:w-[600px] lg:w-[800px]"
-            priority
           />
         </Reveal>
       </div>

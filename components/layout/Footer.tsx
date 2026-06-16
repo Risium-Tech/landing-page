@@ -1,5 +1,7 @@
 "use client";
 
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
@@ -20,6 +22,11 @@ function WhatsAppIcon({ className = "" }: { className?: string }) {
 }
 
 export default function Footer({ copy, locale }: { copy: LandingCopy; locale: string }) {
+  const handleEmailClick = () => {
+    const emailAddress = ["comercial", "upconnections-app.com"].join("@");
+    window.location.href = `mailto:${emailAddress}`;
+  };
+
   return (
     <footer id="contact" className="border-border bg-night-deep relative border-t">
       <div className="mx-auto max-w-[1560px] px-4 py-20 md:px-6">
@@ -44,13 +51,14 @@ export default function Footer({ copy, locale }: { copy: LandingCopy; locale: st
             </p>
             <ul className="text-muted-foreground space-y-3">
               <li>
-                <a
-                  href="mailto:comercial@upconnections-app.com"
+                <button
+                  type="button"
+                  onClick={handleEmailClick}
                   className="hover:text-primary flex items-center gap-3 transition-colors"
                 >
                   <EnvelopeIcon className="h-4 w-4" />
-                  comercial@upconnections-app.com
-                </a>
+                  {copy.footer.emailLabel}
+                </button>
               </li>
               <li>
                 <a
