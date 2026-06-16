@@ -19,7 +19,7 @@ export default async function AccountCancellationPolicyPage({ params }: { params
     <>
       <Header copy={copy} locale={locale} />
 
-      <main className="bg-white">
+      <main className="bg-white pt-28 md:pt-32">
         <section className="container mx-auto max-w-4xl px-4 py-16 text-gray-900 md:px-6">
           <h1 className="mb-6 text-3xl font-bold md:text-4xl">{t("title")}</h1>
 

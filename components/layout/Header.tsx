@@ -23,6 +23,7 @@ export default function Header({ copy, locale }: { copy: LandingCopy; locale: st
   const router = useRouter();
   const langRef = useRef<HTMLDivElement>(null);
   const currentLang = languages.find((language) => language.code === locale) || languages[0];
+  const isLandingPage = pathname === `/${locale}` || pathname === "/";
   const navItems = [
     { label: copy.nav.home, href: "#home" },
     { label: copy.nav.technology, href: "#technology" },
@@ -34,13 +35,13 @@ export default function Header({ copy, locale }: { copy: LandingCopy; locale: st
 
   useEffect(() => {
     let frameId = 0;
-    let lastScrolled = window.scrollY > 20;
+    let lastScrolled = !isLandingPage || window.scrollY > 20;
 
     setScrolled(lastScrolled);
 
     const updateScrolled = () => {
       frameId = 0;
-      const nextScrolled = window.scrollY > 20;
+      const nextScrolled = !isLandingPage || window.scrollY > 20;
 
       if (nextScrolled !== lastScrolled) {
         lastScrolled = nextScrolled;
@@ -60,7 +61,7 @@ export default function Header({ copy, locale }: { copy: LandingCopy; locale: st
       window.removeEventListener("scroll", onScroll);
       cancelAnimationFrame(frameId);
     };
-  }, []);
+  }, [isLandingPage]);
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";

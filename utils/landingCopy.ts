@@ -3,9 +3,23 @@ export type LocaleKey = "pt" | "pt-pt" | "en" | "es";
 export const landingCopy = {
   pt: {
     seo: {
-      title: "Up Connections | Experiências de luz sincronizadas",
+      title: "Up Connections | Show de luzes com celulares e mosaicos interativos",
       description:
-        "Plataforma de sincronização ao vivo para criar mosaicos interativos, experiências de luz e engajamento coletivo em grandes eventos.",
+        "Plataforma para show de luzes com celulares, mosaicos interativos, sincronização de smartphones e experiências coletivas ao vivo em estádios, festivais, arenas e grandes eventos.",
+      keywords: [
+        "show de luzes",
+        "show de luzes com celulares",
+        "mosaicos interativos",
+        "mosaico interativo com celulares",
+        "sincronização de celulares",
+        "sincronização de smartphones",
+        "experiência coletiva ao vivo",
+        "engajamento do público em eventos",
+        "ativação interativa para eventos",
+        "plateia interativa",
+        "efeitos de luz com celular",
+        "tecnologia para eventos ao vivo",
+      ],
     },
     nav: {
       home: "Home",
@@ -150,9 +164,23 @@ export const landingCopy = {
   },
   "pt-pt": {
     seo: {
-      title: "Up Connections | Experiências de luz sincronizadas",
+      title: "Up Connections | Espetáculos de luz com telemóveis e mosaicos interativos",
       description:
-        "Plataforma de sincronização ao vivo para criar mosaicos interativos, experiências de luz e envolvimento coletivo em grandes eventos.",
+        "Plataforma para espetáculos de luz com telemóveis, mosaicos interativos, sincronização de smartphones e experiências coletivas ao vivo em estádios, festivais, arenas e grandes eventos.",
+      keywords: [
+        "espetáculo de luz",
+        "espetáculo de luz com telemóveis",
+        "mosaicos interativos",
+        "mosaico interativo com telemóveis",
+        "sincronização de telemóveis",
+        "sincronização de smartphones",
+        "experiência coletiva ao vivo",
+        "envolvimento do público em eventos",
+        "ativação interativa para eventos",
+        "plateia interativa",
+        "efeitos de luz com telemóvel",
+        "tecnologia para eventos ao vivo",
+      ],
     },
     nav: {
       home: "Início",
@@ -297,9 +325,23 @@ export const landingCopy = {
   },
   en: {
     seo: {
-      title: "Up Connections | Synchronized light experiences",
+      title: "Up Connections | Phone light show and interactive crowd mosaics",
       description:
-        "Live synchronization platform for interactive mosaics, light experiences and collective engagement at large events.",
+        "Platform for phone light shows, interactive crowd mosaics, smartphone synchronization and live audience engagement in stadiums, festivals, arenas and large-scale events.",
+      keywords: [
+        "phone light show",
+        "interactive mosaics",
+        "crowd mosaics",
+        "smartphone synchronization",
+        "interactive audience experience",
+        "live event technology",
+        "audience engagement platform",
+        "stadium light show",
+        "festival light experience",
+        "interactive event activation",
+        "mobile light effects",
+        "crowd participation technology",
+      ],
     },
     nav: {
       home: "Home",
@@ -443,9 +485,23 @@ export const landingCopy = {
   },
   es: {
     seo: {
-      title: "Up Connections | Experiencias de luz sincronizadas",
+      title: "Up Connections | Show de luces con móviles y mosaicos interactivos",
       description:
-        "Plataforma de sincronización en vivo para crear mosaicos interactivos, experiencias de luz y participación colectiva en grandes eventos.",
+        "Plataforma para show de luces con móviles, mosaicos interactivos, sincronización de smartphones y experiencias colectivas en vivo en estadios, festivales, arenas y grandes eventos.",
+      keywords: [
+        "show de luces",
+        "show de luces con móviles",
+        "mosaicos interactivos",
+        "mosaico interactivo con móviles",
+        "sincronización de móviles",
+        "sincronización de smartphones",
+        "experiencia colectiva en vivo",
+        "participación del público en eventos",
+        "activación interactiva para eventos",
+        "público interactivo",
+        "efectos de luz con móvil",
+        "tecnología para eventos en vivo",
+      ],
     },
     nav: {
       home: "Inicio",

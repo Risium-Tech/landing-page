@@ -3,10 +3,28 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { LenisProvider } from "@/components/providers/LenisProvider";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://upconnections-app.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Up Connections",
+  applicationName: "Up Connections",
   description:
-    "Plataforma de sincronização ao vivo para criar mosaicos interativos, experiências de luz e engajamento coletivo em grandes eventos.",
+    "Plataforma para shows de luzes com celulares, mosaicos interativos e experiências coletivas ao vivo em grandes eventos.",
+  keywords: [
+    "show de luzes",
+    "mosaicos interativos",
+    "sincronização de celulares",
+    "experiência coletiva ao vivo",
+    "tecnologia para eventos",
+  ],
+  alternates: {
+    canonical: siteUrl,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 type Props = {
